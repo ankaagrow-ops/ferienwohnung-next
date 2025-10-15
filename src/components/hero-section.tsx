@@ -7,7 +7,7 @@ type HeroSectionProps = {
 
 export function HeroSection({ hero }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-rose-50 via-stone-50 to-white">
+    <section className="relative overflow-hidden bg-gradient-to-b from-rose-50 via-stone-50 to-white pt-20">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 py-16 sm:px-6 lg:flex-row lg:items-center lg:gap-16 lg:py-24 lg:px-8">
         <div className="w-full space-y-6 lg:w-1/2">
           <span className="inline-flex items-center rounded-full bg-white px-4 py-1 text-xs font-semibold uppercase tracking-widest text-rose-600 shadow-sm">

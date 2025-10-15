@@ -1,9 +1,11 @@
 import { Metadata } from "next";
 import { getLandingContent } from "@/lib/landing-content";
+import { Navigation } from "@/components/navigation";
 import { HeroSection } from "@/components/hero-section";
 import { GallerySection } from "@/components/gallery-section";
 import { HighlightsSection } from "@/components/highlights-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
+import { FAQSection } from "@/components/faq-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 
@@ -33,11 +35,13 @@ export default async function HomePage() {
 
   return (
     <>
+      <Navigation />
       <main className="bg-white text-slate-900">
         <HeroSection hero={content.hero} />
         <GallerySection images={content.gallery} />
         <HighlightsSection highlights={content.highlights} />
         <TestimonialsSection testimonials={content.testimonials} />
+        <FAQSection />
         <ContactSection />
       </main>
       <Footer />
