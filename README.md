@@ -214,3 +214,4 @@ Bei Fragen:
 ---
 
 *Built with Next.js 14, TypeScript & Tailwind CSS*
+# ferienwohnung-next
