@@ -1,51 +1,23 @@
-import { Metadata } from "next";
-import { getLandingContent } from "@/lib/landing-content";
-import { Navigation } from "@/components/navigation";
-import { HeroSection } from "@/components/hero-section";
-import { GallerySection } from "@/components/gallery-section";
-import { HighlightsSection } from "@/components/highlights-section";
-import { TestimonialsSection } from "@/components/testimonials-section";
-import { FAQSection } from "@/components/faq-section";
-import { ContactSection } from "@/components/contact-section";
-import { Footer } from "@/components/footer";
-
-export const revalidate = 3600; // re-generate every hour
-
-export const metadata: Metadata = {
-  title: "Ferienwohnung Unterm Schloß · Hambach an der Weinstraße",
-  description:
-    "Historisches Altstadthaus mit 120 m², Holzofen und Innenhof – Traumurlaub in Hambach. Jetzt Verfügbarkeit prüfen!",
-  openGraph: {
-    title: "Ferienwohnung Unterm Schloß",
-    description:
-      "Ferienidylle in Hambach mit Top-Bewertungen, liebevoller Ausstattung und persönlichem Gastgeber-Service.",
-    images: [
-      {
-        url: "/images/00-hero-hambacher-schloss.jpg",
-        width: 1800,
-        height: 1200,
-        alt: "Ferienwohnung Unterm Schloß – Blick auf Hambacher Schloss",
-      },
-    ],
-  },
-};
-
-export default async function HomePage() {
-  const content = await getLandingContent();
-
+export default function HomePage() {
   return (
-    <>
-      <Navigation />
-      <main className="bg-white text-slate-900">
-        <HeroSection hero={content.hero} />
-        <GallerySection images={content.gallery} />
-        <HighlightsSection highlights={content.highlights} />
-        <TestimonialsSection testimonials={content.testimonials} />
-        <FAQSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </>
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      fontFamily: 'system-ui, sans-serif',
+      backgroundColor: '#f0f0f0'
+    }}>
+      <h1 style={{ fontSize: '3rem', color: '#333', marginBottom: '1rem' }}>
+        ✅ VERCEL BUILD FUNKTIONIERT!
+      </h1>
+      <p style={{ fontSize: '1.5rem', color: '#666' }}>
+        Ferienwohnung Unterm Schloß - Hambach
+      </p>
+      <p style={{ marginTop: '2rem', fontSize: '1rem', color: '#999' }}>
+        Build Zeit: {new Date().toISOString()}
+      </p>
+    </div>
   );
 }
-// Vercel test - Thu Oct 16 02:02:56 CEST 2025
