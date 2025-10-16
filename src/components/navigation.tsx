@@ -34,21 +34,14 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-md"
-          : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 backdrop-blur-sm ${
+        isScrolled ? "bg-white/95 border-rose-100 shadow-md" : "bg-white/80 border-transparent shadow-sm"
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link
-            href="/"
-            className={`text-xl font-bold transition-colors ${
-              isScrolled ? "text-rose-600" : "text-white"
-            }`}
-          >
+          <Link href="/" className="text-xl font-bold text-rose-600 transition-colors">
             Ferienwohnung Unterm Schloß
           </Link>
 
@@ -59,18 +52,14 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className={`text-sm font-medium transition-colors hover:text-rose-600 ${
-                  isScrolled ? "text-slate-700" : "text-white"
-                }`}
+                className="text-sm font-medium text-slate-700 transition-colors hover:text-rose-600"
               >
                 {item.label}
               </a>
             ))}
             <Link
               href="/impressum"
-              className={`text-sm font-medium transition-colors hover:text-rose-600 ${
-                isScrolled ? "text-slate-700" : "text-white"
-              }`}
+              className="text-sm font-medium text-slate-700 transition-colors hover:text-rose-600"
             >
               Impressum
             </Link>
@@ -79,9 +68,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2 rounded-md ${
-              isScrolled ? "text-slate-700" : "text-white"
-            }`}
+            className="md:hidden p-2 rounded-md text-slate-700"
             aria-label="Menü öffnen"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
