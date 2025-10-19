@@ -19,6 +19,7 @@ export function Navigation() {
     { href: "#galerie", label: "Galerie" },
     { href: "#vorteile", label: "Vorteile" },
     { href: "#bewertungen", label: "Bewertungen" },
+    { href: "#booking", label: "Buchen" },
     { href: "#kontakt", label: "Kontakt" },
   ];
 

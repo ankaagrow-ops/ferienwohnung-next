@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/hero-section";
 import { HighlightsSection } from "@/components/highlights-section";
 import { GallerySection } from "@/components/gallery-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
+import { BookingSection } from "@/components/booking-section";
 import { FAQSection } from "@/components/faq-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
@@ -21,6 +22,7 @@ export default async function HomePage() {
         <HighlightsSection highlights={content.highlights} />
         <GallerySection images={content.gallery} />
         <TestimonialsSection testimonials={content.testimonials} />
+        <BookingSection />
         <FAQSection />
         <ContactSection />
       </main>
