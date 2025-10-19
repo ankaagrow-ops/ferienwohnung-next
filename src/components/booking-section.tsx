@@ -75,7 +75,7 @@ export async function BookingSection() {
 
         {/* Info Box */}
         <div className="mt-12 bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-600">
-          <h4 className="font-semibold text-lg mb-2">So funktioniert's:</h4>
+          <h4 className="font-semibold text-lg mb-2">So funktioniert&apos;s:</h4>
           <ol className="space-y-2 text-gray-700">
             <li className="flex items-start gap-3">
               <span className="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">1</span>
