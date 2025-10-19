@@ -46,7 +46,8 @@ function parseICalData(icalData: string): string[] {
     }
   });
 
-  return [...new Set(blockedDates)]; // Remove duplicates
+  // Remove duplicates
+  return Array.from(new Set(blockedDates));
 }
 
 /**
