@@ -22,7 +22,7 @@ function SubmitButton() {
         ${
           pending
             ? "bg-gray-400 cursor-not-allowed"
-            : "bg-blue-600 hover:bg-blue-700 hover:scale-105 active:scale-95"
+            : "bg-wine-700 hover:bg-wine-800 hover:scale-105 active:scale-95 shadow-lg shadow-wine-900/30"
         }
       `}
     >
@@ -71,21 +71,21 @@ export function BookingForm({ blockedDates }: BookingFormProps) {
           <input type="hidden" name="checkOut" value={checkOutDate} />
 
           {/* Date Display */}
-          <div className="p-4 bg-blue-50 rounded-lg">
+          <div className="p-4 bg-wine-50 rounded-lg border border-wine-200">
             {checkInDate && checkOutDate ? (
               <div className="text-sm">
-                <p className="font-medium text-blue-900">
+                <p className="font-medium text-wine-900">
                   Check-in: <span className="font-bold">{new Date(checkInDate).toLocaleDateString("de-DE")}</span>
                 </p>
-                <p className="font-medium text-blue-900 mt-1">
+                <p className="font-medium text-wine-900 mt-1">
                   Check-out: <span className="font-bold">{new Date(checkOutDate).toLocaleDateString("de-DE")}</span>
                 </p>
-                <p className="text-blue-700 mt-2">
+                <p className="text-wine-700 mt-2">
                   {calculateNights(checkInDate, checkOutDate)} Nächte
                 </p>
               </div>
             ) : (
-              <p className="text-sm text-blue-700">
+              <p className="text-sm text-wine-700">
                 Bitte wählen Sie im Kalender Check-in und Check-out Datum
               </p>
             )}
@@ -101,7 +101,7 @@ export function BookingForm({ blockedDates }: BookingFormProps) {
               id="name"
               name="name"
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-3 border border-vineyard-300 rounded-lg focus:ring-2 focus:ring-wine-500 focus:border-transparent"
               placeholder="Ihr vollständiger Name"
             />
             {state?.errors?.name && (
@@ -119,7 +119,7 @@ export function BookingForm({ blockedDates }: BookingFormProps) {
               id="email"
               name="email"
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-3 border border-vineyard-300 rounded-lg focus:ring-2 focus:ring-wine-500 focus:border-transparent"
               placeholder="ihre@email.de"
             />
             {state?.errors?.email && (
@@ -137,7 +137,7 @@ export function BookingForm({ blockedDates }: BookingFormProps) {
               id="phone"
               name="phone"
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-3 border border-vineyard-300 rounded-lg focus:ring-2 focus:ring-wine-500 focus:border-transparent"
               placeholder="+49 123 456789"
             />
             {state?.errors?.phone && (
@@ -154,7 +154,7 @@ export function BookingForm({ blockedDates }: BookingFormProps) {
               id="guests"
               name="guests"
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-3 border border-vineyard-300 rounded-lg focus:ring-2 focus:ring-wine-500 focus:border-transparent"
             >
               <option value="">Bitte wählen</option>
               <option value="1">1 Person</option>
@@ -176,7 +176,7 @@ export function BookingForm({ blockedDates }: BookingFormProps) {
               id="message"
               name="message"
               rows={4}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-3 border border-vineyard-300 rounded-lg focus:ring-2 focus:ring-wine-500 focus:border-transparent"
               placeholder="Haben Sie besondere Wünsche oder Fragen?"
             />
           </div>

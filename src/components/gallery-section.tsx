@@ -25,7 +25,7 @@ export function GallerySection({ images }: GallerySectionProps) {
                 Aufenthalt aus.
               </p>
             </div>
-            <span className="rounded-full border border-rose-200 px-5 py-2 text-sm font-semibold text-rose-600">
+            <span className="rounded-full border border-rose-200 px-5 py-2 text-sm font-semibold text-wine-700">
               Galerie · {images.length} Impressionen
             </span>
           </div>

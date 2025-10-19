@@ -77,13 +77,13 @@ export function FAQSection() {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-rose-50 transition-colors"
+                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-vineyard-50 transition-colors"
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}
               >
                 <span className="font-semibold text-slate-900 pr-8">{faq.question}</span>
                 <svg
-                  className={`w-5 h-5 text-rose-600 flex-shrink-0 transition-transform duration-200 ${
+                  className={`w-5 h-5 text-wine-700 flex-shrink-0 transition-transform duration-200 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                   fill="none"
@@ -111,7 +111,7 @@ export function FAQSection() {
         <div className="mt-12 text-center">
           <p className="text-slate-600">
             Weitere Fragen?{" "}
-            <a href="#kontakt" className="text-rose-600 font-semibold hover:text-rose-700">
+            <a href="#kontakt" className="text-wine-700 font-semibold hover:text-wine-800">
               Kontaktiere uns direkt
             </a>
           </p>

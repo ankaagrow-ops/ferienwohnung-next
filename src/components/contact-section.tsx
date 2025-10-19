@@ -26,7 +26,7 @@ export function ContactSection() {
   return (
     <section
       id="kontakt"
-      className="bg-gradient-to-r from-rose-700 via-rose-600 to-rose-800"
+      className="bg-gradient-to-r from-wine-700 via-wine-600 to-wine-800"
       aria-labelledby="section-contact"
     >
       <div className="mx-auto flex max-w-5xl flex-col gap-8 px-4 py-16 text-white sm:px-6 lg:flex-row lg:items-start lg:justify-between lg:px-8">
@@ -34,16 +34,16 @@ export function ContactSection() {
           <h2 id="section-contact" className="text-3xl font-bold sm:text-4xl">
             Bereit für eure Auszeit in Hambach?
           </h2>
-          <p className="text-rose-100">
+          <p className="text-wine-100">
             Schick uns deine Anfrage – wir melden uns mit Verfügbarkeit, Preisen ab 189 € pro Nacht
             und persönlichen Tipps.
           </p>
-          <ul className="space-y-2 text-sm text-rose-50">
+          <ul className="space-y-2 text-sm text-wine-50">
             <li>✓ Direkter Kontakt zu Eva &amp; Jon</li>
             <li>✓ Transparente Preise ohne versteckte Gebühren</li>
             <li>✓ Hunde willkommen (10 € pro Tag und Hund)</li>
           </ul>
-          <p className="pt-2 text-sm text-rose-100">
+          <p className="pt-2 text-sm text-wine-100">
             Telefon: <strong>0172 804 9269</strong> · E-Mail: <strong>eva.dirion@gmx.net</strong>
           </p>
         </div>
@@ -70,7 +70,7 @@ export function ContactSection() {
                 type="text"
                 name="name"
                 required
-                className="mt-1 rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-rose-100 focus:border-white focus:outline-none"
+                className="mt-1 rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-wine-100 focus:border-white focus:outline-none"
                 placeholder="Max Mustermann"
               />
               {state?.errors?.name && (
@@ -83,7 +83,7 @@ export function ContactSection() {
                 type="email"
                 name="email"
                 required
-                className="mt-1 rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-rose-100 focus:border-white focus:outline-none"
+                className="mt-1 rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-wine-100 focus:border-white focus:outline-none"
                 placeholder="name@mail.de"
               />
               {state?.errors?.email && (
@@ -97,7 +97,7 @@ export function ContactSection() {
               type="text"
               name="dates"
               required
-              className="mt-1 rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-rose-100 focus:border-white focus:outline-none"
+              className="mt-1 rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-wine-100 focus:border-white focus:outline-none"
               placeholder="z. B. 12.–16. September"
             />
             {state?.errors?.dates && (
@@ -110,7 +110,7 @@ export function ContactSection() {
               name="message"
               rows={4}
               required
-              className="mt-1 rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-rose-100 focus:border-white focus:outline-none"
+              className="mt-1 rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-wine-100 focus:border-white focus:outline-none"
               placeholder="Wie können wir euren Aufenthalt besonders machen?"
             />
             {state?.errors?.message && (
@@ -124,7 +124,7 @@ export function ContactSection() {
           >
             {isSubmitting ? "Wird gesendet..." : "Anfrage senden"}
           </button>
-          <p className="text-xs text-rose-100/80">
+          <p className="text-xs text-wine-100/80">
             Wir melden uns in der Regel innerhalb von 24 Stunden mit allen Details zu Aufenthalt und
             Buchung.
           </p>

@@ -19,9 +19,9 @@ export function HighlightsSection({ highlights }: HighlightsSectionProps) {
           {highlights.map((highlight) => (
             <article
               key={highlight.title}
-              className="rounded-2xl border border-rose-100 bg-rose-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="rounded-2xl border border-rose-100 bg-vineyard-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
             >
-              <h3 className="text-lg font-semibold text-rose-700">{highlight.title}</h3>
+              <h3 className="text-lg font-semibold text-wine-800">{highlight.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{highlight.description}</p>
             </article>
           ))}

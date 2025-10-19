@@ -12,12 +12,12 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900">Kontakt</h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-600">
               <li>
-                <a href="tel:+491728049269" className="hover:text-rose-600 transition">
+                <a href="tel:+491728049269" className="hover:text-wine-700 transition">
                   0172 804 9269
                 </a>
               </li>
               <li>
-                <a href="mailto:eva.dirion@gmx.net" className="hover:text-rose-600 transition">
+                <a href="mailto:eva.dirion@gmx.net" className="hover:text-wine-700 transition">
                   eva.dirion@gmx.net
                 </a>
               </li>
@@ -34,22 +34,22 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900">Navigation</h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-600">
               <li>
-                <a href="#galerie" className="hover:text-rose-600 transition">
+                <a href="#galerie" className="hover:text-wine-700 transition">
                   Galerie
                 </a>
               </li>
               <li>
-                <a href="#vorteile" className="hover:text-rose-600 transition">
+                <a href="#vorteile" className="hover:text-wine-700 transition">
                   Vorteile
                 </a>
               </li>
               <li>
-                <a href="#bewertungen" className="hover:text-rose-600 transition">
+                <a href="#bewertungen" className="hover:text-wine-700 transition">
                   Bewertungen
                 </a>
               </li>
               <li>
-                <a href="#kontakt" className="hover:text-rose-600 transition">
+                <a href="#kontakt" className="hover:text-wine-700 transition">
                   Kontakt
                 </a>
               </li>
@@ -61,12 +61,12 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900">Rechtliches</h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-600">
               <li>
-                <Link href="/impressum" className="hover:text-rose-600 transition">
+                <Link href="/impressum" className="hover:text-wine-700 transition">
                   Impressum
                 </Link>
               </li>
               <li>
-                <Link href="/datenschutz" className="hover:text-rose-600 transition">
+                <Link href="/datenschutz" className="hover:text-wine-700 transition">
                   Datenschutz
                 </Link>
               </li>

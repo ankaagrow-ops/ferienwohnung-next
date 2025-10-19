@@ -36,13 +36,13 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 backdrop-blur-sm ${
-        isScrolled ? "bg-white/95 border-rose-100 shadow-md" : "bg-white/80 border-transparent shadow-sm"
+        isScrolled ? "bg-vineyard-50/95 border-wine-200 shadow-md" : "bg-vineyard-50/80 border-transparent shadow-sm"
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold text-rose-600 transition-colors">
+          <Link href="/" className="text-xl font-bold text-wine-700 transition-colors hover:text-wine-800">
             Ferienwohnung Unterm Schloß
           </Link>
 
@@ -53,14 +53,14 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="text-sm font-medium text-slate-700 transition-colors hover:text-rose-600"
+                className="text-sm font-medium text-vineyard-800 transition-colors hover:text-wine-700"
               >
                 {item.label}
               </a>
             ))}
             <Link
               href="/impressum"
-              className="text-sm font-medium text-slate-700 transition-colors hover:text-rose-600"
+              className="text-sm font-medium text-vineyard-800 transition-colors hover:text-wine-700"
             >
               Impressum
             </Link>
@@ -69,7 +69,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-md text-slate-700"
+            className="md:hidden p-2 rounded-md text-vineyard-800 hover:bg-wine-50"
             aria-label="Menü öffnen"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -85,27 +85,27 @@ export function Navigation() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden pb-4 bg-white/95 backdrop-blur-sm rounded-b-lg shadow-lg">
+          <div className="md:hidden pb-4 bg-vineyard-50/95 backdrop-blur-sm rounded-b-lg shadow-lg">
             <div className="flex flex-col space-y-2">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-rose-600 hover:bg-rose-50 transition-colors"
+                  className="px-4 py-2 text-sm font-medium text-vineyard-800 hover:text-wine-700 hover:bg-wine-50 transition-colors"
                 >
                   {item.label}
                 </a>
               ))}
               <Link
                 href="/impressum"
-                className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-rose-600 hover:bg-rose-50 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-vineyard-800 hover:text-wine-700 hover:bg-wine-50 transition-colors"
               >
                 Impressum
               </Link>
               <Link
                 href="/datenschutz"
-                className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-rose-600 hover:bg-rose-50 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-vineyard-800 hover:text-wine-700 hover:bg-wine-50 transition-colors"
               >
                 Datenschutz
               </Link>

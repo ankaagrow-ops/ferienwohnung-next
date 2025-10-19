@@ -102,13 +102,13 @@ export function BookingCalendar({ blockedDates, onDateSelect }: BookingCalendarP
             h-12 rounded-lg transition-all duration-200
             ${isDisabled
               ? "bg-gray-100 text-gray-400 cursor-not-allowed line-through"
-              : "hover:bg-blue-50 cursor-pointer"
+              : "hover:bg-wine-50 cursor-pointer"
             }
             ${isCheckIn || isCheckOut
-              ? "bg-blue-600 text-white font-bold hover:bg-blue-700"
+              ? "bg-wine-700 text-white font-bold hover:bg-wine-800"
               : ""
             }
-            ${isInRange ? "bg-blue-100" : ""}
+            ${isInRange ? "bg-wine-100" : ""}
           `}
         >
           {day}
@@ -170,8 +170,8 @@ export function BookingCalendar({ blockedDates, onDateSelect }: BookingCalendarP
 
       {/* Selected dates display */}
       {checkInDate && (
-        <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-          <p className="text-sm font-medium text-blue-900">
+        <div className="mt-6 p-4 bg-wine-50 rounded-lg border border-wine-200">
+          <p className="text-sm font-medium text-wine-900">
             Check-in: <span className="font-bold">{new Date(checkInDate).toLocaleDateString("de-DE")}</span>
             {checkOutDate && (
               <>
@@ -184,9 +184,9 @@ export function BookingCalendar({ blockedDates, onDateSelect }: BookingCalendarP
       )}
 
       {/* Legend */}
-      <div className="mt-4 flex flex-wrap gap-4 text-sm">
+      <div className="mt-4 flex flex-wrap gap-4 text-sm text-vineyard-700">
         <div className="flex items-center gap-2">
-          <div className="w-4 h-4 bg-blue-600 rounded"></div>
+          <div className="w-4 h-4 bg-wine-700 rounded"></div>
           <span>Ausgewählt</span>
         </div>
         <div className="flex items-center gap-2">
