@@ -215,5 +215,5 @@ Bei Fragen:
 
 *Built with Next.js 14, TypeScript & Tailwind CSS*
 
-**Test: Vercel Auto-Deploy Check**
+**✅ With Booking System - Direct bookings available!**
 # ferienwohnung-next
