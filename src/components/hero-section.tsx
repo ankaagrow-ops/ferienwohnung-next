@@ -11,7 +11,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 py-16 sm:px-6 lg:flex-row lg:items-center lg:gap-16 lg:py-24 lg:px-8">
         <div className="w-full space-y-6 lg:w-1/2">
           <span className="inline-flex items-center rounded-full bg-white px-4 py-1 text-xs font-semibold uppercase tracking-widest text-wine-700 shadow-sm border border-wine-200">
-            9,7/10 auf Booking.com
+            Von Eva & Jon persönlich betreut
           </span>
           <h1 className="text-4xl font-bold leading-tight text-vineyard-900 sm:text-5xl">
             {hero.title}
@@ -37,8 +37,8 @@ export function HeroSection({ hero }: HeroSectionProps) {
 
           <ul className="space-y-2 text-sm text-vineyard-600">
             <li>✓ Zwei Schlafzimmer · Platz für bis zu sechs Gäste</li>
-            <li>✓ Holzofen · Innenhof · hochwertige Naturmaterialien</li>
-            <li>✓ Persönliche Gastgeber-Tipps für Weingüter & Ausflüge</li>
+            <li>✓ Gemütlicher Holzofen · Sonniger Innenhof</li>
+            <li>✓ Unsere persönlichen Tipps für die schönsten Weingüter</li>
           </ul>
         </div>
 

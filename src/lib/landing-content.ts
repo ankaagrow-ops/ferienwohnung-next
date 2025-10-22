@@ -43,18 +43,18 @@ export async function getLandingContent(): Promise<LandingContent> {
   // Keeping the data co-located on the server gives us full SSR/SSG benefits.
   return {
     hero: {
-      title: "Ferienwohnung Unterm Schloß",
-      subtitle: "Historisches Ambiente trifft modernen Komfort in Hambach",
+      title: "Willkommen in unserem Zuhause",
+      subtitle: "Eine liebevoll eingerichtete Ferienwohnung mitten in Hambach",
       description:
-        "120 m² Altstadthaus, zwei Schlafzimmer, Holzofen, sonniger Innenhof. Ideal für Familien, Paare und Freunde, die die Pfalz mit allen Sinnen erleben möchten.",
+        "Unser 120 m² Altstadthaus mit zwei Schlafzimmern, gemütlichem Holzofen und sonnigem Innenhof ist perfekt für euren Aufenthalt in der Pfalz. Hier könnt ihr entspannen, die Region erkunden und euch wie zuhause fühlen.",
       ctas: [
         {
-          label: "Verfügbarkeit prüfen",
+          label: "Anfrage senden",
           href: "#kontakt",
           flavor: "primary",
         },
         {
-          label: "Weitere Eindrücke",
+          label: "Bilder anschauen",
           href: "#galerie",
           flavor: "secondary",
         },
@@ -66,19 +66,19 @@ export async function getLandingContent(): Promise<LandingContent> {
     },
     highlights: [
       {
-        title: "Premium-Lage",
+        title: "Mitten im Herzen von Hambach",
         description:
-          "Direkt an der Weinstraße gelegen – Weinberge, Cafés und das Hambacher Schloss in fußläufiger Entfernung.",
+          "Unsere Ferienwohnung liegt direkt an der Weinstraße. Weinberge, gemütliche Cafés und das Hambacher Schloss sind nur wenige Schritte entfernt.",
       },
       {
-        title: "Liebevoll eingerichtet",
+        title: "Mit Liebe zum Detail eingerichtet",
         description:
-          "Holzofen, maßgeschneiderte Schreinerküche, Naturmaterialien und hochwertige Boxspringbetten für erholsame Nächte.",
+          "Holzofen für gemütliche Abende, eine maßgeschneiderte Küche und hochwertige Betten. Wir haben alles so gestaltet, wie wir es selbst mögen.",
       },
       {
-        title: "Beste Bewertungen",
+        title: "Von Gästen geliebt",
         description:
-          "9,7/10 auf Booking.com – besonders gelobt werden Ausstattung, Sauberkeit und persönliche Gastgebertipps.",
+          "Unsere Gäste schätzen besonders die persönliche Betreuung und unsere Tipps für die schönsten Ecken der Pfalz.",
       },
     ],
     gallery: [
@@ -119,21 +119,21 @@ export async function getLandingContent(): Promise<LandingContent> {
         name: "Anne & Tobias",
         location: "Münster",
         rating: 5,
-        text: "Wunderschöne Ferienwohnung mit viel Liebe zum Detail. Der Innenhof ist abends ein Traum und die Region bietet unendliche Ausflugsmöglichkeiten.",
+        text: "Eva und Jon haben eine wunderschöne Ferienwohnung geschaffen. Der Innenhof ist unser Lieblingsplatz geworden und ihre Tipps für die Region waren perfekt.",
       },
       {
         id: "julia-2024",
         name: "Julia",
         location: "Stuttgart",
         rating: 5,
-        text: "Wir haben uns wie zuhause gefühlt. Besonders die kleinen Aufmerksamkeiten der Gastgeber und die Winzer-Empfehlungen waren Gold wert.",
+        text: "Wir haben uns von der ersten Minute an wohlgefühlt. Die persönliche Betreuung und die kleinen Details machen den Unterschied. Danke für alles!",
       },
       {
         id: "karl-2023",
         name: "Karl & Verena",
         location: "Hamburg",
         rating: 5,
-        text: "Perfekte Basis für ein verlängertes Weinwochenende. Die Küche ist top ausgestattet, die Betten super bequem – wir kommen wieder!",
+        text: "Perfekt für unser Weinwochenende! Die Küche ist wunderbar ausgestattet und die Betten so bequem, dass wir gar nicht mehr weg wollten.",
       },
     ],
   };
