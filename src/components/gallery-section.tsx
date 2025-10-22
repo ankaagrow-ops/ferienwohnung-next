@@ -47,7 +47,7 @@ export function GallerySection({ images }: GallerySectionProps) {
 
           {/* Premium Gallery Grid */}
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {images.map((image, index) => (
+            {images.map((image) => (
               <figure
                 key={image.src}
                 className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-100 to-slate-200 shadow-xl shadow-slate-900/10 transition-all duration-700 hover:-translate-y-3 hover:shadow-2xl hover:shadow-wine-900/20 cursor-pointer"
