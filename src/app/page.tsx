@@ -6,10 +6,11 @@ import { SurroundingsSection } from "@/components/surroundings-section";
 import { LocationActivities } from "@/components/location-activities";
 import { RestaurantsSection } from "@/components/restaurants-section";
 import { PricingSection } from "@/components/pricing-section";
-import { ContactForm } from "@/components/contact-form";
+import { EnhancedContactForm } from "@/components/enhanced-contact-form";
 import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
 import { SchemaOrg } from "@/components/schema-org";
+import { ErrorBoundary } from "@/components/error-boundary";
 
 // Premium Content Data - wird jetzt über Übersetzungen geladen
 const heroContent = {
@@ -120,15 +121,33 @@ export default function HomePage() {
       <Navigation />
       
       <main>
-        <HeroSection hero={heroContent} />
-        <ValueProposition />
-        <GallerySection images={galleryImages} />
-        <FeaturesSection />
-        <SurroundingsSection />
-        <LocationActivities />
-        <RestaurantsSection />
-        <PricingSection />
-        <ContactForm />
+        <ErrorBoundary>
+          <HeroSection hero={heroContent} />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <ValueProposition />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <GallerySection images={galleryImages} />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <FeaturesSection />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <SurroundingsSection />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <LocationActivities />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <RestaurantsSection />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <PricingSection />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <EnhancedContactForm />
+        </ErrorBoundary>
       </main>
       
       <Footer />
