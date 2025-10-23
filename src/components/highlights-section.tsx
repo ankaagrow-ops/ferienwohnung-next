@@ -178,17 +178,23 @@ export function HighlightsSection({ highlights }: HighlightsSectionProps) {
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-wine-500 to-wine-700 transform scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></div>
             </article>
           ))}
-        </div>
+        </motion.div>
 
         {/* Premium Bottom CTA */}
-        <div className="mt-16 text-center">
+        <motion.div 
+          className="mt-16 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
           <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-wine-100 to-gold-100 px-6 py-3 text-sm font-medium text-wine-800">
             <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
             Alle Features inklusive
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
