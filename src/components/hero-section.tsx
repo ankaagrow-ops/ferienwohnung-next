@@ -47,13 +47,13 @@ export function HeroSection({ hero }: HeroSectionProps) {
 
             {/* Typography */}
             <motion.h1
-              className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight mb-6"
+              className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight mb-6 font-serif"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               Willkommen in unserem
-              <span className="block mt-2 text-accent-300">Zuhause in Hambach</span>
+              <span className="block mt-2 text-accent-300 font-handwriting text-5xl sm:text-6xl lg:text-7xl">Zuhause in Hambach</span>
             </motion.h1>
 
             <motion.p

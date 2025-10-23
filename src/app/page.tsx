@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/hero-section";
+import { OurStorySection } from "@/components/our-story-section";
 import { ValueProposition } from "@/components/value-proposition";
 import { GallerySection } from "@/components/gallery-section";
 import { FeaturesSection } from "@/components/features-section";
@@ -123,6 +124,9 @@ export default function HomePage() {
       <main>
         <ErrorBoundary>
           <HeroSection hero={heroContent} />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <OurStorySection />
         </ErrorBoundary>
         <ErrorBoundary>
           <ValueProposition />

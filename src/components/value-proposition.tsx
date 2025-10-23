@@ -48,13 +48,13 @@ export function ValueProposition() {
           transition={{ duration: 0.8 }}
         >
           <motion.h2
-            className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl mb-4"
+            className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl mb-4 font-serif"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Was unser Zuhause besonders macht
+            Was unser <span className="font-handwriting text-4xl sm:text-5xl lg:text-6xl text-primary-600">Zuhause</span> besonders macht
           </motion.h2>
 
           <motion.p

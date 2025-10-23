@@ -1,5 +1,25 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display, Caveat } from "next/font/google";
 import "./globals.css";
+
+// Warme, persönliche Schriften
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  variable: "--font-caveat",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -53,7 +73,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="font-sans antialiased">
+      <body className={`${inter.variable} ${playfair.variable} ${caveat.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

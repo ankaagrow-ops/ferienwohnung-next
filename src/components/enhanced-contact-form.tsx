@@ -199,9 +199,9 @@ export function EnhancedContactForm() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-5xl font-bold text-center text-gray-900 mb-16 leading-tight"
+          className="text-5xl font-bold text-center text-gray-900 mb-16 leading-tight font-serif"
         >
-          Lassen Sie uns sprechen
+          Lassen Sie uns <span className="font-handwriting text-6xl text-primary-600">sprechen</span>
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
