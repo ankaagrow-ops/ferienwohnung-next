@@ -200,7 +200,7 @@ export function EnhancedContactForm() {
           transition={{ duration: 0.8 }}
           className="text-5xl font-bold text-center text-gray-900 mb-16 leading-tight"
         >
-          Ihre Anfrage
+          Lassen Sie uns sprechen
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -217,8 +217,8 @@ export function EnhancedContactForm() {
                 <Mail className="h-6 w-6 text-primary-600" />
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-gray-900">Senden Sie uns eine Nachricht</h3>
-                <p className="text-gray-600 mt-1">Wir antworten innerhalb von 24 Stunden</p>
+                <h3 className="text-3xl font-bold text-gray-900">Erzählen Sie uns von Ihren Plänen</h3>
+                <p className="text-gray-600 mt-1">Wir freuen uns darauf, Sie kennenzulernen</p>
               </div>
             </div>
 
@@ -390,7 +390,7 @@ export function EnhancedContactForm() {
                       ? 'border-red-300 focus:ring-red-500 focus:border-red-500' 
                       : 'border-gray-300 focus:ring-primary-500 focus:border-primary-500'
                   }`}
-                  placeholder="Erzählen Sie uns von Ihren Plänen..."
+                  placeholder="Was möchten Sie in Hambach erleben? Haben Sie besondere Wünsche?"
                 />
                 {errors.message && (
                   <p className="mt-2 text-sm text-red-600 flex items-center gap-1">
@@ -440,7 +440,7 @@ export function EnhancedContactForm() {
                 ) : (
                   <>
                     <Shield className="h-5 w-5" />
-                    Anfrage senden
+                    Nachricht senden
                   </>
                 )}
               </motion.button>
@@ -453,7 +453,7 @@ export function EnhancedContactForm() {
                   className="mt-4 flex items-center gap-2 text-green-600 font-medium bg-green-50 p-4 rounded-xl"
                 >
                   <CheckCircle className="h-5 w-5" />
-                  Vielen Dank! Wir melden uns schnellstmöglich bei Ihnen zurück.
+                  Vielen Dank! Wir freuen uns darauf, von Ihnen zu hören und melden uns bald.
                 </motion.div>
               )}
               

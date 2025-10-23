@@ -70,7 +70,7 @@ export function PricingSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Transparente
+            Was Sie
             <motion.span 
               className="block bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent"
               initial={{ opacity: 0, x: -20 }}
@@ -78,7 +78,7 @@ export function PricingSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Preisgestaltung
+              erwartet
             </motion.span>
           </motion.h2>
           
@@ -89,7 +89,7 @@ export function PricingSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            Keine versteckten Kosten, keine Überraschungen. Alles was ihr braucht, ist bereits inklusive.
+            Wir möchten, dass ihr euch von Anfang an wohlfühlt. Alles was ihr braucht, ist bereits da.
           </motion.p>
         </motion.div>
 
@@ -167,8 +167,8 @@ export function PricingSection() {
             transition={{ duration: 0.8 }}
           >
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Buchungsoptionen</h3>
-              <p className="text-gray-600 mb-8">Wählt die für euch passende Buchungsart:</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">So erreichen Sie uns</h3>
+              <p className="text-gray-600 mb-8">Wir freuen uns darauf, von Ihnen zu hören:</p>
             </div>
 
             <div className="space-y-4">
@@ -238,7 +238,7 @@ export function PricingSection() {
                 <span className="font-semibold text-gray-900">Persönlicher Service</span>
               </div>
               <p className="text-gray-600 text-sm">
-                Wir sind vor Ort und helfen gerne bei allen Fragen rund um euren Aufenthalt in der Pfalz.
+                Wir sind vor Ort und helfen gerne bei allen Fragen rund um Ihren Aufenthalt in der Pfalz.
               </p>
             </motion.div>
           </motion.div>

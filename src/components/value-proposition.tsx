@@ -7,24 +7,24 @@ export function ValueProposition() {
   const valueProps = [
     {
       icon: MapPin,
-      title: "Mitten in der Geschichte",
-      description: "Schloßstraße – Fußweg zum Hambacher Schloss, Start für Weinwanderungen",
+      title: "Geschichte erleben",
+      description: "Direkt am Hambacher Schloss – wo deutsche Demokratie begann. Jeden Tag Geschichte zum Anfassen.",
       color: "from-primary-500 to-primary-600",
       bgColor: "bg-primary-50",
       iconColor: "text-primary-600"
     },
     {
       icon: Sparkles,
-      title: "Stilvoll & Gemütlich", 
-      description: "Fußbodenheizung, Holzofen, lichtdurchflutet – Moderne trifft Charme",
+      title: "Gemütlich wie zu Hause", 
+      description: "Wir haben unser Zuhause mit Liebe eingerichtet – damit ihr euch sofort wohlfühlt.",
       color: "from-accent-500 to-accent-600",
       bgColor: "bg-accent-50",
       iconColor: "text-accent-600"
     },
     {
       icon: Wine,
-      title: "Wein, Wandern, Kultur",
-      description: "Weingüter fußläufig, Pfälzer Wald direkt vor der Tür",
+      title: "Pfalz entdecken",
+      description: "Weinberge vor der Tür, Pfälzer Wald zum Wandern – die schönste Ecke Deutschlands wartet auf euch.",
       color: "from-wine-500 to-wine-600", 
       bgColor: "bg-wine-50",
       iconColor: "text-wine-600"
@@ -53,7 +53,7 @@ export function ValueProposition() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Warum ihr euch hier wohlfühlen werdet
+            Was unser Zuhause besonders macht
           </motion.h2>
 
           <motion.p
@@ -63,7 +63,7 @@ export function ValueProposition() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Geschichte erleben, Natur genießen und einfach mal die Seele baumeln lassen.
+            Ein Ort voller Geschichte, wo ihr euch entspannen und die Pfalz entdecken könnt.
           </motion.p>
         </motion.div>
 

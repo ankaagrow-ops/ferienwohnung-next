@@ -51,8 +51,8 @@ export function HeroSection({ hero }: HeroSectionProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Urlaub in Hambach
-              <span className="block mt-2">an der Weinstraße</span>
+              Willkommen in unserem
+              <span className="block mt-2 text-accent-300">Zuhause in Hambach</span>
             </motion.h1>
 
             <motion.p
@@ -61,7 +61,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Gemütliche Ferienwohnung im historischen Fachwerkhaus – direkt am Fuße des Hambacher Schlosses
+              Ein historisches Fachwerkhaus voller Geschichte und Charme – wo ihr euch wie zu Hause fühlen könnt
             </motion.p>
 
             {/* CTA Buttons */}
@@ -75,14 +75,14 @@ export function HeroSection({ hero }: HeroSectionProps) {
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 className="rounded-xl bg-primary-600 px-8 py-3 text-base font-medium text-white shadow-lg transition-colors hover:bg-primary-700"
               >
-                Anfragen
+                Lassen Sie uns sprechen
               </button>
 
               <button
                 onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
                 className="rounded-xl border-2 border-white/40 bg-white/10 backdrop-blur-sm px-8 py-3 text-base font-medium text-white transition-all hover:bg-white/20"
               >
-                Bilder ansehen
+                Unser Zuhause entdecken
               </button>
             </motion.div>
 
@@ -94,9 +94,9 @@ export function HeroSection({ hero }: HeroSectionProps) {
               transition={{ duration: 0.6, delay: 0.8 }}
             >
               {[
-                { icon: MapPin, text: "Fußweg zum Hambacher Schloss" },
-                { icon: Wine, text: "Mitten in der Weinstraße" },
-                { icon: Sparkles, text: "Gemütliche Ausstattung" }
+                { icon: MapPin, text: "Geschichte zum Anfassen" },
+                { icon: Wine, text: "Wein & Kultur erleben" },
+                { icon: Sparkles, text: "Gemütlich wie zu Hause" }
               ].map((feature, index) => (
                 <div
                   key={index}

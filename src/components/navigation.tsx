@@ -17,14 +17,14 @@ export function Navigation() {
   }, []);
 
   const navItems = [
-    { href: "#vorteile", label: "Vorteile" },
-    { href: "#gallery", label: "Galerie" },
+    { href: "#about", label: "Über uns" },
+    { href: "#gallery", label: "Unser Zuhause" },
     { href: "#ausstattung", label: "Ausstattung" },
-    { href: "#umgebung", label: "Umgebung" },
+    { href: "#umgebung", label: "Hambach entdecken" },
     { href: "#location", label: "Lage" },
-    { href: "#restaurants", label: "Restaurants" },
-    { href: "#preise", label: "Preise" },
-    { href: "#contact", label: "Kontakt" },
+    { href: "#restaurants", label: "Empfehlungen" },
+    { href: "#preise", label: "Ihr Aufenthalt" },
+    { href: "#contact", label: "Sprechen wir" },
   ];
 
   const switchLanguage = (locale: string) => {
@@ -53,7 +53,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="text-xl font-bold text-wine-700 transition-colors hover:text-wine-800">
-            Ferienwohnung Unterm Schloß
+            Unser Zuhause in Hambach
           </Link>
 
           {/* Desktop Navigation */}
