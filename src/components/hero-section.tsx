@@ -18,10 +18,11 @@ export function HeroSection({ hero }: HeroSectionProps) {
   const y = useTransform(scrollY, [0, 1000], [0, -300]);
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 via-primary-50/30 to-accent-50/20">
-      {/* Premium Background Pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(139,21,56,0.1),transparent_50%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(212,175,55,0.08),transparent_50%)]"></div>
+    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-cream-50 via-warm-50/40 to-cozy-50/30">
+      {/* Warme, organische Hintergrund-Muster */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_30%,rgba(139,21,56,0.08),transparent_60%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_70%,rgba(212,175,55,0.06),transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_80%,rgba(184,154,115,0.04),transparent_80%)]"></div>
       
       {/* Parallax Background Image */}
       <motion.div 
@@ -36,7 +37,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
           priority
           quality={90}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/15 to-black/50" />
       </motion.div>
 
       {/* Premium Content */}
@@ -73,14 +74,14 @@ export function HeroSection({ hero }: HeroSectionProps) {
             >
               <button
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="rounded-xl bg-primary-600 px-8 py-3 text-base font-medium text-white shadow-lg transition-colors hover:bg-primary-700"
+                className="rounded-2xl bg-primary-600 px-8 py-4 text-base font-medium text-white shadow-xl shadow-primary-600/25 transition-all duration-300 hover:bg-primary-700 hover:shadow-2xl hover:shadow-primary-600/30 hover:-translate-y-1"
               >
                 Lassen Sie uns sprechen
               </button>
 
               <button
                 onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
-                className="rounded-xl border-2 border-white/40 bg-white/10 backdrop-blur-sm px-8 py-3 text-base font-medium text-white transition-all hover:bg-white/20"
+                className="rounded-2xl border-2 border-white/30 bg-white/10 backdrop-blur-sm px-8 py-4 text-base font-medium text-white transition-all duration-300 hover:bg-white/20 hover:border-white/50 hover:-translate-y-1"
               >
                 Unser Zuhause entdecken
               </button>
@@ -100,10 +101,10 @@ export function HeroSection({ hero }: HeroSectionProps) {
               ].map((feature, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 text-white/90 p-4 rounded-lg bg-white/10 backdrop-blur-sm"
+                  className="flex items-center gap-3 text-white/90 p-5 rounded-2xl bg-white/10 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:scale-105"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
-                    <feature.icon className="h-5 w-5" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20 shadow-lg">
+                    <feature.icon className="h-6 w-6" />
                   </div>
                   <span className="text-sm font-medium">{feature.text}</span>
                 </div>

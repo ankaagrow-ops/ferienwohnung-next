@@ -38,10 +38,11 @@ export function PricingSection() {
   ];
 
   return (
-    <section id="preise" className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50/30 py-24">
-      {/* Premium Background Elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(139,21,56,0.08),transparent_50%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(212,175,55,0.08),transparent_50%)]"></div>
+    <section id="preise" className="relative overflow-hidden bg-gradient-to-br from-cream-50 via-warm-50/30 to-cozy-50/20 py-24">
+      {/* Warme, organische Hintergrund-Elemente */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(139,21,56,0.06),transparent_60%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_20%,rgba(212,175,55,0.04),transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_80%,rgba(184,154,115,0.03),transparent_80%)]"></div>
       
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Premium Header */}
@@ -102,7 +103,7 @@ export function PricingSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-white rounded-3xl shadow-2xl border border-gray-200/50 overflow-hidden">
+            <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-cream-200/50 overflow-hidden">
               {/* Premium Header */}
               <div className="bg-gradient-to-r from-primary-600 to-primary-700 p-8 text-white">
                 <div className="flex items-center gap-3 mb-4">

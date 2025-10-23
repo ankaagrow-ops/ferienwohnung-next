@@ -187,10 +187,11 @@ export function EnhancedContactForm() {
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden bg-gradient-to-br from-white via-primary-50 to-gray-50/30 py-24">
-      {/* Premium Background Elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(139,21,56,0.05),transparent_50%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_30%,rgba(212,175,55,0.05),transparent_50%)]"></div>
+    <section id="contact" className="relative overflow-hidden bg-gradient-to-br from-cream-50 via-warm-50/40 to-cozy-50/30 py-24">
+      {/* Warme, organische Hintergrund-Elemente */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_80%,rgba(139,21,56,0.04),transparent_60%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_30%,rgba(212,175,55,0.03),transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(184,154,115,0.02),transparent_80%)]"></div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.h2
@@ -210,7 +211,7 @@ export function EnhancedContactForm() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="bg-white rounded-3xl shadow-2xl shadow-gray-900/10 border border-gray-200/50 p-8 md:p-12"
+            className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl shadow-gray-900/10 border border-cream-200/50 p-8 md:p-12"
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="p-3 bg-primary-100 rounded-xl">
@@ -478,7 +479,7 @@ export function EnhancedContactForm() {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <div className="bg-white rounded-3xl shadow-2xl shadow-gray-900/10 border border-gray-200/50 p-8">
+            <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl shadow-gray-900/10 border border-cream-200/50 p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Kontaktinformationen</h3>
               
               <div className="space-y-6">

@@ -32,10 +32,11 @@ export function ValueProposition() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-primary-50/30 py-24">
-      {/* Premium Background Elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(139,21,56,0.05),transparent_50%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(212,175,55,0.05),transparent_50%)]"></div>
+    <section className="relative overflow-hidden bg-gradient-to-br from-cream-50 via-warm-50/30 to-cozy-50/20 py-24">
+      {/* Warme, organische Hintergrund-Elemente */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(139,21,56,0.04),transparent_60%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_20%,rgba(212,175,55,0.03),transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_80%,rgba(184,154,115,0.02),transparent_80%)]"></div>
       
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Premium Header */}
@@ -86,7 +87,7 @@ export function ValueProposition() {
           {valueProps.map((prop) => (
             <motion.article
               key={prop.title}
-              className="relative overflow-hidden rounded-2xl bg-white p-8 shadow-sm border border-gray-100 transition-shadow duration-300 hover:shadow-md"
+              className="relative overflow-hidden rounded-3xl bg-white/80 backdrop-blur-sm p-8 shadow-lg border border-cream-200/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:bg-white/90"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: {
@@ -97,9 +98,9 @@ export function ValueProposition() {
               }}
             >
               {/* Icon */}
-              <div className="mb-5">
-                <div className={`flex h-12 w-12 items-center justify-center rounded-xl ${prop.bgColor}`}>
-                  <prop.icon className={`h-6 w-6 ${prop.iconColor}`} />
+              <div className="mb-6">
+                <div className={`flex h-14 w-14 items-center justify-center rounded-2xl ${prop.bgColor} shadow-lg`}>
+                  <prop.icon className={`h-7 w-7 ${prop.iconColor}`} />
                 </div>
               </div>
 
