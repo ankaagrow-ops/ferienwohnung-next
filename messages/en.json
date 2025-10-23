@@ -1,0 +1,113 @@
+{
+  "navigation": {
+    "vorteile": "Advantages",
+    "galerie": "Gallery", 
+    "ausstattung": "Equipment",
+    "umgebung": "Surroundings",
+    "lage": "Location",
+    "restaurants": "Restaurants",
+    "preise": "Prices",
+    "kontakt": "Contact",
+    "impressum": "Imprint"
+  },
+  "hero": {
+    "title": "Historic Living in the Cradle of Democracy",
+    "subtitle": "Charming vacation apartment in Hambach – Where history meets comfort",
+    "description": "Experience the Palatinate at its finest in our lovingly furnished vacation apartment.",
+    "cta": "Request now",
+    "secondaryCta": "Discover",
+    "features": {
+      "schloss": "Walking distance to Hambach Castle",
+      "wein": "In the heart of the Wine Route",
+      "luxus": "Premium equipment"
+    }
+  },
+  "valueProposition": {
+    "badge": "Why Hambach?",
+    "title": "Three reasons for an unforgettable stay",
+    "description": "Every aspect of our vacation apartment has been designed with love for detail to provide you with an unforgettable stay.",
+    "location": {
+      "title": "In the heart of history",
+      "description": "Schloßstraße – Walking distance to Hambach Castle, starting point for wine hikes"
+    },
+    "equipment": {
+      "title": "Stylish & Cozy",
+      "description": "Underfloor heating, wood stove, light-filled – Modern meets charm"
+    },
+    "experience": {
+      "title": "Wine, Hiking, Culture",
+      "description": "Wineries within walking distance, Palatinate Forest right at your doorstep"
+    }
+  },
+  "gallery": {
+    "badge": "Image Gallery",
+    "title": "Discover our vacation apartment",
+    "description": "Every room has been designed with love for detail to provide you with an unforgettable stay."
+  },
+  "features": {
+    "badge": "Full equipment",
+    "title": "What you can look forward to",
+    "description": "Every aspect of our vacation apartment has been designed with love for detail to provide you with an unforgettable stay."
+  },
+  "surroundings": {
+    "badge": "Discover surroundings",
+    "title": "The Palatinate at its finest",
+    "description": "Discover the beautiful surroundings of our vacation apartment - from historic sites to untouched nature.",
+    "schloss": {
+      "title": "Hambach Castle",
+      "description": "Walking distance to the historic castle - Cradle of German democracy",
+      "distance": "10 min walk"
+    },
+    "weinberge": {
+      "title": "Palatinate Vineyards",
+      "description": "Discover the beautiful vineyards right at your doorstep",
+      "distance": "5 min walk"
+    },
+    "wald": {
+      "title": "Palatinate Forest",
+      "description": "Hiking and nature in the largest contiguous forest area",
+      "distance": "Right at your doorstep"
+    },
+    "weinstrasse": {
+      "title": "German Wine Route",
+      "description": "Starting point for unforgettable wine hikes and tours",
+      "distance": "Directly accessible"
+    }
+  },
+  "location": {
+    "badge": "Location & Activities",
+    "title": "Discover the Palatinate",
+    "description": "Located in the heart of the beautiful Palatinate, our vacation apartment offers the perfect starting point for unforgettable experiences.",
+    "address": "Schloßstraße 18, Neustadt",
+    "distance": "Walking distance to Hambach Castle"
+  },
+  "restaurants": {
+    "badge": "Restaurant Recommendations",
+    "title": "Culinary Discoveries",
+    "description": "Discover the culinary treasures of the Palatinate in our favorite restaurants and cafés."
+  },
+  "pricing": {
+    "badge": "Prices & Conditions",
+    "title": "Transparent Pricing",
+    "description": "No hidden costs, no surprises. Everything you need is already included."
+  },
+  "contact": {
+    "badge": "Contact & Inquiry",
+    "title": "Request now",
+    "description": "Tell us about your plans and we'll get back to you as soon as possible.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Phone (optional)",
+      "checkin": "Check-in",
+      "checkout": "Check-out",
+      "guests": "Number of guests",
+      "message": "Message",
+      "privacy": "I have read the privacy policy and agree to the processing of my data.",
+      "submit": "Send inquiry",
+      "submitting": "Sending...",
+      "success": "Thank you! We'll get back to you as soon as possible.",
+      "error": "There was an error. Please try again or call us directly."
+    }
+  }
+}

@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { MapPin, Sparkles, Wine } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 type HeroContent = {
   title: string;
@@ -21,6 +22,7 @@ type HeroSectionProps = {
 export function HeroSection({ hero }: HeroSectionProps) {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 1000], [0, -300]);
+  const t = useTranslations('hero');
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 via-primary-50/30 to-accent-50/20">
@@ -68,15 +70,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Historisches Wohnen in der{" "}
-              <motion.span 
-                className="block bg-gradient-to-r from-accent-400 to-accent-500 bg-clip-text text-transparent"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-              >
-                Wiege der Demokratie
-              </motion.span>
+              {t('title')}
             </motion.h1>
             
             <motion.p 
@@ -85,7 +79,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Charmante Ferienwohnung in Hambach – Wo Geschichte auf Gemütlichkeit trifft
+              {t('subtitle')}
             </motion.p>
 
             {/* Premium CTA Buttons */}
@@ -101,7 +95,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span className="relative z-10">Jetzt anfragen</span>
+                <span className="relative z-10">{t('cta')}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               </motion.button>
               
@@ -111,7 +105,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Entdecken
+                {t('secondaryCta')}
               </motion.button>
             </motion.div>
 
@@ -123,9 +117,9 @@ export function HeroSection({ hero }: HeroSectionProps) {
               transition={{ duration: 0.8, delay: 1 }}
             >
               {[
-                { icon: MapPin, text: "Fußweg zum Hambacher Schloss", highlight: "Geschichte" },
-                { icon: Wine, text: "Mitten in der Weinstraße", highlight: "Wein" },
-                { icon: Sparkles, text: "Premium Ausstattung", highlight: "Luxus" }
+                { icon: MapPin, text: t('features.schloss'), highlight: "Geschichte" },
+                { icon: Wine, text: t('features.wein'), highlight: "Wein" },
+                { icon: Sparkles, text: t('features.luxus'), highlight: "Luxus" }
               ].map((feature, index) => (
                 <motion.div
                   key={index}

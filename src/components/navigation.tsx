@@ -2,10 +2,16 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentLocale, setCurrentLocale] = useState('de');
+  const t = useTranslations('navigation');
+  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,16 +21,29 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    // Extract locale from pathname
+    const locale = pathname.split('/')[1];
+    if (locale === 'en' || locale === 'de') {
+      setCurrentLocale(locale);
+    }
+  }, [pathname]);
+
   const navItems = [
-    { href: "#vorteile", label: "Vorteile" },
-    { href: "#gallery", label: "Galerie" },
-    { href: "#ausstattung", label: "Ausstattung" },
-    { href: "#umgebung", label: "Umgebung" },
-    { href: "#location", label: "Lage" },
-    { href: "#restaurants", label: "Restaurants" },
-    { href: "#preise", label: "Preise" },
-    { href: "#contact", label: "Kontakt" },
+    { href: "#vorteile", label: t('vorteile') },
+    { href: "#gallery", label: t('galerie') },
+    { href: "#ausstattung", label: t('ausstattung') },
+    { href: "#umgebung", label: t('umgebung') },
+    { href: "#location", label: t('lage') },
+    { href: "#restaurants", label: t('restaurants') },
+    { href: "#preise", label: t('preise') },
+    { href: "#contact", label: t('kontakt') },
   ];
+
+  const switchLanguage = (locale: string) => {
+    const newPath = pathname.replace(/^\/[a-z]{2}/, `/${locale}`);
+    router.push(newPath);
+  };
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
@@ -65,8 +84,32 @@ export function Navigation() {
               href="/impressum"
               className="text-sm font-medium text-vineyard-800 transition-colors hover:text-wine-700"
             >
-              Impressum
+              {t('impressum')}
             </Link>
+            
+            {/* Language Switcher */}
+            <div className="flex items-center gap-2 ml-4 pl-4 border-l border-vineyard-300">
+              <button
+                onClick={() => switchLanguage('de')}
+                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                  currentLocale === 'de' 
+                    ? 'bg-wine-600 text-white' 
+                    : 'text-vineyard-800 hover:text-wine-700 hover:bg-wine-50'
+                }`}
+              >
+                DE
+              </button>
+              <button
+                onClick={() => switchLanguage('en')}
+                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                  currentLocale === 'en' 
+                    ? 'bg-wine-600 text-white' 
+                    : 'text-vineyard-800 hover:text-wine-700 hover:bg-wine-50'
+                }`}
+              >
+                EN
+              </button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -104,7 +147,7 @@ export function Navigation() {
                 href="/impressum"
                 className="px-4 py-2 text-sm font-medium text-vineyard-800 hover:text-wine-700 hover:bg-wine-50 transition-colors"
               >
-                Impressum
+                {t('impressum')}
               </Link>
               <Link
                 href="/datenschutz"
@@ -112,6 +155,33 @@ export function Navigation() {
               >
                 Datenschutz
               </Link>
+              
+              {/* Mobile Language Switcher */}
+              <div className="px-4 py-2 border-t border-vineyard-300 mt-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-medium text-vineyard-800">Sprache:</span>
+                  <button
+                    onClick={() => switchLanguage('de')}
+                    className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                      currentLocale === 'de' 
+                        ? 'bg-wine-600 text-white' 
+                        : 'text-vineyard-800 hover:text-wine-700 hover:bg-wine-50'
+                    }`}
+                  >
+                    DE
+                  </button>
+                  <button
+                    onClick={() => switchLanguage('en')}
+                    className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                      currentLocale === 'en' 
+                        ? 'bg-wine-600 text-white' 
+                        : 'text-vineyard-800 hover:text-wine-700 hover:bg-wine-50'
+                    }`}
+                  >
+                    EN
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         )}

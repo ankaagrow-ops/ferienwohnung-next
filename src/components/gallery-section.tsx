@@ -94,8 +94,8 @@ export function GallerySection({ images }: GallerySectionProps) {
           </motion.p>
         </motion.div>
 
-        {/* Premium Masonry Grid */}
-        <motion.div 
+        {/* Premium Grid Layout */}
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           initial="hidden"
           whileInView="visible"
@@ -113,25 +113,23 @@ export function GallerySection({ images }: GallerySectionProps) {
           {images.map((image, index) => (
             <motion.div
               key={index}
-              className={`group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-500 hover:shadow-2xl hover:shadow-primary-900/10 cursor-pointer ${
-                index === 0 || index === 3 ? 'lg:col-span-2 lg:row-span-2' : ''
-              }`}
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-500 hover:shadow-2xl hover:shadow-primary-900/10 cursor-pointer"
               variants={{
                 hidden: { opacity: 0, y: 30 },
-                visible: { 
-                  opacity: 1, 
+                visible: {
+                  opacity: 1,
                   y: 0,
                   transition: { duration: 0.6, ease: "easeOut" }
                 }
               }}
-              whileHover={{ 
+              whileHover={{
                 y: -4,
                 transition: { type: "spring", stiffness: 300 }
               }}
               onClick={() => openLightbox(index)}
             >
-              {/* Image Container */}
-              <div className="relative aspect-[4/3] lg:aspect-square">
+              {/* Image Container - Fixed aspect ratio for consistent cards */}
+              <div className="relative aspect-[4/3]">
                 <Image
                   src={image.src}
                   alt={image.alt}
