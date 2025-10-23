@@ -2,13 +2,11 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [currentLocale, setCurrentLocale] = useState('de');
-  const t = useTranslations('navigation');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,14 +17,14 @@ export function Navigation() {
   }, []);
 
   const navItems = [
-    { href: "#vorteile", label: t('vorteile') },
-    { href: "#gallery", label: t('galerie') },
-    { href: "#ausstattung", label: t('ausstattung') },
-    { href: "#umgebung", label: t('umgebung') },
-    { href: "#location", label: t('lage') },
-    { href: "#restaurants", label: t('restaurants') },
-    { href: "#preise", label: t('preise') },
-    { href: "#contact", label: t('kontakt') },
+    { href: "#vorteile", label: "Vorteile" },
+    { href: "#gallery", label: "Galerie" },
+    { href: "#ausstattung", label: "Ausstattung" },
+    { href: "#umgebung", label: "Umgebung" },
+    { href: "#location", label: "Lage" },
+    { href: "#restaurants", label: "Restaurants" },
+    { href: "#preise", label: "Preise" },
+    { href: "#contact", label: "Kontakt" },
   ];
 
   const switchLanguage = (locale: string) => {
@@ -74,7 +72,7 @@ export function Navigation() {
               href="/impressum"
               className="text-sm font-medium text-vineyard-800 transition-colors hover:text-wine-700"
             >
-              {t('impressum')}
+              Impressum
             </Link>
             
             {/* Language Switcher */}
@@ -137,7 +135,7 @@ export function Navigation() {
                 href="/impressum"
                 className="px-4 py-2 text-sm font-medium text-vineyard-800 hover:text-wine-700 hover:bg-wine-50 transition-colors"
               >
-                {t('impressum')}
+                Impressum
               </Link>
               <Link
                 href="/datenschutz"
