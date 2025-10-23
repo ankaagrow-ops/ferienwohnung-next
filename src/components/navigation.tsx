@@ -16,11 +16,13 @@ export function Navigation() {
   }, []);
 
   const navItems = [
-    { href: "#galerie", label: "Galerie" },
     { href: "#vorteile", label: "Vorteile" },
-    { href: "#bewertungen", label: "Bewertungen" },
-    { href: "#gastgeber", label: "Gastgeber" },
-    { href: "#kontakt", label: "Kontakt" },
+    { href: "#gallery", label: "Galerie" },
+    { href: "#ausstattung", label: "Ausstattung" },
+    { href: "#location", label: "Lage" },
+    { href: "#restaurants", label: "Restaurants" },
+    { href: "#preise", label: "Preise" },
+    { href: "#contact", label: "Kontakt" },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
