@@ -6,11 +6,6 @@ import { MapPin, Sparkles, Wine } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 type HeroContent = {
-  title: string;
-  subtitle: string;
-  description: string;
-  cta: string;
-  secondaryCta: string;
   image: string;
   features: string[];
 };
