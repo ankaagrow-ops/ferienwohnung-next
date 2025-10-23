@@ -1,0 +1,184 @@
+{
+  "exterior": [
+    {
+      "filename": "01-fassade-hauptansicht.jpg",
+      "title": "Historische Fassade der Ferienwohnung",
+      "alt": "Weiße historische Fassade eines Fachwerkhauses mit grünen Fensterläden und dunklem Ziegeldach in malerischer Altstadtgasse",
+      "description": "Außenansicht des charmanten historischen Gebäudes in der Altstadt",
+      "category": "exterior"
+    }
+  ],
+  "courtyard": [
+    {
+      "filename": "01-innenhof-eingang.jpg",
+      "title": "Romantischer Innenhof - Eingang",
+      "alt": "Romantischer gepflasterter Innenhof mit grüner Holztür, Weinfässern und üppiger Begrünung",
+      "description": "Einladender Innenhof mit historischem Fachwerk und mediterranem Flair",
+      "category": "courtyard"
+    },
+    {
+      "filename": "02-innenhof-fachwerk.jpg",
+      "title": "Innenhof mit Fachwerk-Details",
+      "alt": "Historischer Innenhof mit rot-weißem Fachwerk, grüner Holztür, Weinfässern und vielen Topfpflanzen",
+      "description": "Idyllischer Innenhof mit authentischem Fachwerk und grüner Oase",
+      "category": "courtyard"
+    },
+    {
+      "filename": "03-innenhof-sitzbereich.jpg",
+      "title": "Innenhof Sitzbereich zum Entspannen",
+      "alt": "Gemütlicher Sitzbereich im Innenhof mit Holztisch, Gartenstühlen, Weinfass und mediterranen Pflanzen",
+      "description": "Privater Außenbereich mit Sitzmöglichkeiten zum Relaxen",
+      "category": "courtyard"
+    },
+    {
+      "filename": "04-innenhof-panorama.jpg",
+      "title": "Panoramaansicht des Innenhofs",
+      "alt": "Weitläufiger Innenhof-Panorama mit Sitzecke, Bepflanzung, historischem Sandsteingewölbe und Fachwerk-Gebäude",
+      "description": "Gesamtansicht des großzügigen privaten Innenhofs mit Weinbergs-Ambiente",
+      "category": "courtyard"
+    },
+    {
+      "filename": "05-treppe-innenhof.jpg",
+      "title": "Historische Holztreppe zum Eingang",
+      "alt": "Rustikale Holztreppe mit dunklem Holzgeländer führt durch begrünten Innenhof zur Ferienwohnung",
+      "description": "Charmanter Treppenaufgang zur Wohnung durch den Innenhof",
+      "category": "courtyard"
+    }
+  ],
+  "living_room": [
+    {
+      "filename": "01-wohnzimmer-hauptansicht.jpg",
+      "title": "Stilvolles Wohnzimmer mit Designerleuchte",
+      "alt": "Elegantes Wohnzimmer mit olivgrünem Sofa, Designer-Kugelleuchte, Parkettboden und großen Fenstern mit grauen Vorhängen",
+      "description": "Gemütlicher Wohnbereich mit hochwertiger Einrichtung und viel Tageslicht",
+      "category": "living-room"
+    },
+    {
+      "filename": "02-wohnzimmer-alternativ.jpg",
+      "title": "Wohnbereich mit antikem Charm",
+      "alt": "Wohnzimmer mit olivgrünem Sofa, antikem gelbem Schrank mit floralen Motiven, dunkler Akzentwand und Holzboden",
+      "description": "Alternative Perspektive des Wohnzimmers mit antiken Möbelstücken",
+      "category": "living-room"
+    },
+    {
+      "filename": "03-kaminofen.jpg",
+      "title": "Gemütlicher Kaminofen",
+      "alt": "Moderner rot-schwarzer Kaminofen mit brennendem Feuer auf dunklem Fliesenboden neben grauem Sofa",
+      "description": "Behaglicher Kaminofen für gemütliche Abende",
+      "category": "living-room"
+    }
+  ],
+  "kitchen": [
+    {
+      "filename": "01-kueche-essbereich.jpg",
+      "title": "Moderne Wohnküche mit Essbereich",
+      "alt": "Offene moderne Küche mit weißen Schränken, Holzarbeitsplatte, rotem Smeg-Kühlschrank und großem Esstisch mit gepolsterten Stühlen",
+      "description": "Voll ausgestattete Küche mit gemütlichem Essbereich für die ganze Familie",
+      "category": "kitchen"
+    },
+    {
+      "filename": "02-kueche-panorama.jpg",
+      "title": "Küche Panoramaansicht",
+      "alt": "Großzügige Küche mit weißen Hängeschränken, gelben Fliesen, modernen Geräten und Essplatz mit Designer-Pendelleuchten",
+      "description": "Weitläufige Küche mit kompletter Ausstattung und viel Arbeitsfläche",
+      "category": "kitchen"
+    }
+  ],
+  "bedroom": [
+    {
+      "filename": "01-schlafzimmer-doppelbett.jpg",
+      "title": "Hauptschlafzimmer mit Doppelbett",
+      "alt": "Geräumiges Schlafzimmer mit Doppelbett, grauen Kissen, Holzschrank, sichtbaren Deckenbalken und zwei Fenstern mit grauen Vorhängen",
+      "description": "Komfortables Schlafzimmer mit authentischen Holzbalken und modernem Komfort",
+      "category": "bedroom"
+    },
+    {
+      "filename": "02-schlafzimmer-durchgang.jpg",
+      "title": "Schlafzimmer mit Durchgang",
+      "alt": "Schlafzimmer mit Doppelbett, Kiefernschrank, Holzbalken an der Decke und Durchgang zum angrenzenden Raum",
+      "description": "Durchgangszimmer mit rustikalem Charme und natürlichen Materialien",
+      "category": "bedroom"
+    },
+    {
+      "filename": "03-schlafzimmer-weiss.jpg",
+      "title": "Helles Schlafzimmer mit weißem Mobiliar",
+      "alt": "Schlafzimmer mit weißem Holzbett, sichtbaren Deckenbalken, Holzboden und zwei Fenstern mit grauen Vorhängen",
+      "description": "Luftiges Schlafzimmer in hellen Farben mit rustikalen Akzenten",
+      "category": "bedroom"
+    },
+    {
+      "filename": "04-schlafzimmer-detail.jpg",
+      "title": "Schlafzimmer Detailansicht",
+      "alt": "Schlafzimmerdetail mit antikem Holzschrank, Stehlampe, Fenster mit grauen Vorhängen und Parkettboden",
+      "description": "Antike Möbelstücke verleihen dem Schlafzimmer besonderen Charakter",
+      "category": "bedroom"
+    },
+    {
+      "filename": "05-schlafzimmer-antikschrank.jpg",
+      "title": "Schlafzimmer mit Antikschrank",
+      "alt": "Gemütliches Schlafzimmer mit massivem antikem Holzschrank, brauner Akzentwand, Pendelleuchte und grauen Vorhängen",
+      "description": "Stilvolles Schlafzimmer mit antiken Möbeln und warmem Ambiente",
+      "category": "bedroom"
+    }
+  ],
+  "bathroom": [
+    {
+      "filename": "01-badezimmer-hauptansicht.jpg",
+      "title": "Luxuriöses Badezimmer mit Badewanne",
+      "alt": "Großzügiges Badezimmer mit eingebauter Badewanne in terracotta Stufen, beige Fliesen, Glasdusche, Waschbecken und Holzspiegel",
+      "description": "Geräumiges Badezimmer mit außergewöhnlicher gestufter Badewanne",
+      "category": "bathroom"
+    },
+    {
+      "filename": "02-badezimmer-perspektive.jpg",
+      "title": "Badezimmer alternative Perspektive",
+      "alt": "Modernes Badezimmer mit beigen Fliesen, zwei gemütlichen Sesseln vor der Badewanne, Pflanzen und großem Fenster",
+      "description": "Wellness-Badezimmer mit Entspannungsecke und Tageslicht",
+      "category": "bathroom"
+    },
+    {
+      "filename": "03-dusche-detail.jpg",
+      "title": "Moderne begehbare Dusche",
+      "alt": "Geräumige begehbare Dusche mit beigen Fliesen, Regendusche und Oberlicht für natürliches Licht",
+      "description": "Komfortable Walk-in Dusche mit Tageslicht",
+      "category": "bathroom"
+    },
+    {
+      "filename": "04-badezimmer-komplett.jpg",
+      "title": "Komplettansicht Badezimmer",
+      "alt": "Vollständige Badezimmeransicht mit Waschbecken, Wandtoilette, Handtuchheizkörper, terracotta Bodenfliesen und großem Fenster",
+      "description": "Modernes Badezimmer mit kompletter Ausstattung",
+      "category": "bathroom"
+    },
+    {
+      "filename": "05-gaeste-wc.jpg",
+      "title": "Gäste-WC",
+      "alt": "Kompaktes Gäste-WC mit weißem Waschbecken, Toilette, Holzboden und Fenster mit dezentem Sichtschutz",
+      "description": "Separates Gäste-WC mit natürlichem Lichteinfall",
+      "category": "bathroom"
+    }
+  ],
+  "hallway": [
+    {
+      "filename": "01-treppenaufgang.jpg",
+      "title": "Historischer Treppenaufgang",
+      "alt": "Rustikale Holztreppe mit dunklem Geländer, Holzstufen und Blick auf begrünten Innenhof durch Fenster",
+      "description": "Charmanter Eingangsbereich mit historischer Holztreppe",
+      "category": "hallway"
+    },
+    {
+      "filename": "02-flur-fachwerk.jpg",
+      "title": "Flur mit Sichtfachwerk",
+      "alt": "Langer Flur mit Holzboden, sichtbaren Fachwerkbalken an weißer Wand und antikem Holzmöbel",
+      "description": "Authentischer Flur mit historischem Fachwerk und Charakter",
+      "category": "hallway"
+    },
+    {
+      "filename": "03-flur-eingang.jpg",
+      "title": "Eingangsflur modern",
+      "alt": "Moderner heller Flur mit Holzboden, weißen Wänden, Holztüren und dekorativer Lampe auf Sideboard",
+      "description": "Einladender Eingangsbereich mit Holzelementen",
+      "category": "hallway"
+    }
+  ]
+}

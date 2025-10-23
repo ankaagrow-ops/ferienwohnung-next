@@ -27,256 +27,165 @@ const heroContent = {
 };
 
 const galleryImages = [
-  // Hauptbilder
+  // Außenansicht
   {
-    src: "/images/05-wohnzimmer.jpg",
-    alt: "Gemütliches Wohnzimmer mit Holzofen in der Ferienwohnung Hambach",
-    width: 800,
-    height: 600,
-    category: "Wohnzimmer"
-  },
-  {
-    src: "/images/04-kueche-essbereich.jpg", 
-    alt: "Moderne Küche mit Essbereich in der Ferienwohnung Hambach",
-    width: 600,
-    height: 400,
-    category: "Küche"
-  },
-  {
-    src: "/images/07-badezimmer-badewanne.jpg",
-    alt: "Luxuriöses Badezimmer mit Fußbodenheizung in der Ferienwohnung Hambach",
-    width: 600,
-    height: 400,
-    category: "Badezimmer"
-  },
-  {
-    src: "/images/02-innenhof-terrasse.jpg",
-    alt: "Gemütlicher Innenhof zum Entspannen in der Ferienwohnung Hambach",
-    width: 800,
-    height: 600,
-    category: "Außenbereich"
-  },
-  {
-    src: "/images/06-schlafzimmer-hauptraum.jpg",
-    alt: "Stilvolles Schlafzimmer in der Ferienwohnung Hambach",
-    width: 600,
-    height: 400,
-    category: "Schlafzimmer"
-  },
-  {
-    src: "/images/03-aussenansicht-gebaeude.jpg",
-    alt: "Historisches Gebäude in der Schloßstraße 18, Neustadt an der Weinstraße",
-    width: 800,
-    height: 600,
+    src: "/images/exterior/01-fassade-hauptansicht.jpg",
+    alt: "Weiße historische Fassade eines Fachwerkhauses mit grünen Fensterläden und dunklem Ziegeldach in malerischer Altstadtgasse",
+    width: 1920,
+    height: 1440,
     category: "Außenansicht"
   },
-  
-  // Wohnzimmer Details
+
+  // Innenhof / Außenbereich
   {
-    src: "/images/08-wohnzimmer-detail-1.jpg",
-    alt: "Gemütliche Sitzecke mit Blick auf den Garten in der Ferienwohnung Hambach",
-    width: 600,
-    height: 400,
-    category: "Wohnzimmer"
-  },
-  {
-    src: "/images/09-wohnzimmer-detail-2.jpg",
-    alt: "Historische Elemente und moderne Einrichtung im Wohnzimmer",
-    width: 600,
-    height: 400,
-    category: "Wohnzimmer"
-  },
-  {
-    src: "/images/10-wohnzimmer-detail-3.jpg",
-    alt: "Gemütliche Atmosphäre mit Holzofen im Wohnzimmer",
-    width: 600,
-    height: 400,
-    category: "Wohnzimmer"
-  },
-  {
-    src: "/images/11-wohnzimmer-detail-4.jpg",
-    alt: "Stilvolle Einrichtung mit Blick auf die Umgebung",
-    width: 600,
-    height: 400,
-    category: "Wohnzimmer"
-  },
-  {
-    src: "/images/12-wohnzimmer-detail-5.jpg",
-    alt: "Entspannungsbereich im gemütlichen Wohnzimmer",
-    width: 600,
-    height: 400,
-    category: "Wohnzimmer"
-  },
-  {
-    src: "/images/13-wohnzimmer-detail-6.jpg",
-    alt: "Premium Ausstattung im Wohnzimmer der Ferienwohnung",
-    width: 600,
-    height: 400,
-    category: "Wohnzimmer"
-  },
-  
-  // Küche Details
-  {
-    src: "/images/14-kueche-detail-1.jpg",
-    alt: "Moderne Küchengeräte und Arbeitsplatte in der Ferienwohnung",
-    width: 600,
-    height: 400,
-    category: "Küche"
-  },
-  {
-    src: "/images/15-kueche-detail-2.jpg",
-    alt: "Voll ausgestattete Küche mit allen notwendigen Geräten",
-    width: 600,
-    height: 400,
-    category: "Küche"
-  },
-  {
-    src: "/images/16-kueche-detail-3.jpg",
-    alt: "Funktionale Kücheneinrichtung für den perfekten Aufenthalt",
-    width: 600,
-    height: 400,
-    category: "Küche"
-  },
-  {
-    src: "/images/17-kueche-detail-4.jpg",
-    alt: "Moderne Küche mit Essbereich in der Ferienwohnung Hambach",
-    width: 600,
-    height: 400,
-    category: "Küche"
-  },
-  {
-    src: "/images/18-kueche-detail-5.jpg",
-    alt: "Stilvolle Küchenausstattung mit Blick ins Grüne",
-    width: 600,
-    height: 400,
-    category: "Küche"
-  },
-  
-  // Badezimmer Details
-  {
-    src: "/images/19-badezimmer-detail-1.jpg",
-    alt: "Luxuriöse Badewanne mit Blick ins Grüne in der Ferienwohnung",
-    width: 600,
-    height: 400,
-    category: "Badezimmer"
-  },
-  {
-    src: "/images/20-badezimmer-detail-2.jpg",
-    alt: "Modernes Badezimmer mit Fußbodenheizung",
-    width: 600,
-    height: 400,
-    category: "Badezimmer"
-  },
-  {
-    src: "/images/21-badezimmer-detail-3.jpg",
-    alt: "Entspannungsbereich im luxuriösen Badezimmer",
-    width: 600,
-    height: 400,
-    category: "Badezimmer"
-  },
-  {
-    src: "/images/22-badezimmer-detail-4.jpg",
-    alt: "Premium Badezimmerausstattung in der Ferienwohnung",
-    width: 600,
-    height: 400,
-    category: "Badezimmer"
-  },
-  {
-    src: "/images/23-badezimmer-detail-5.jpg",
-    alt: "Stilvolles Badezimmer mit modernen Elementen",
-    width: 600,
-    height: 400,
-    category: "Badezimmer"
-  },
-  
-  // Schlafzimmer Details
-  {
-    src: "/images/24-schlafzimmer-detail-1.jpg",
-    alt: "Gemütliches Schlafzimmer mit historischen Elementen",
-    width: 600,
-    height: 400,
-    category: "Schlafzimmer"
-  },
-  {
-    src: "/images/25-schlafzimmer-detail-2.jpg",
-    alt: "Entspannungsbereich im stilvollen Schlafzimmer",
-    width: 600,
-    height: 400,
-    category: "Schlafzimmer"
-  },
-  {
-    src: "/images/26-schlafzimmer-detail-3.jpg",
-    alt: "Premium Schlafzimmerausstattung in der Ferienwohnung",
-    width: 600,
-    height: 400,
-    category: "Schlafzimmer"
-  },
-  {
-    src: "/images/27-schlafzimmer-detail-4.jpg",
-    alt: "Gemütliches Schlafzimmer mit Blick auf die Umgebung",
-    width: 600,
-    height: 400,
-    category: "Schlafzimmer"
-  },
-  
-  // Außenbereich Details
-  {
-    src: "/images/28-innenhof-detail-1.jpg",
-    alt: "Ruhiger Innenhof mit Sitzgelegenheiten zum Entspannen",
-    width: 800,
-    height: 600,
+    src: "/images/courtyard/01-innenhof-eingang.jpg",
+    alt: "Romantischer gepflasterter Innenhof mit grüner Holztür, Weinfässern und üppiger Begrünung",
+    width: 1920,
+    height: 1440,
     category: "Außenbereich"
   },
   {
-    src: "/images/29-innenhof-detail-2.jpg",
-    alt: "Gemütlicher Außenbereich der Ferienwohnung Hambach",
-    width: 800,
-    height: 600,
+    src: "/images/courtyard/02-innenhof-fachwerk.jpg",
+    alt: "Historischer Innenhof mit rot-weißem Fachwerk, grüner Holztür, Weinfässern und vielen Topfpflanzen",
+    width: 1920,
+    height: 1440,
     category: "Außenbereich"
   },
   {
-    src: "/images/30-innenhof-detail-3.jpg",
-    alt: "Entspannungsbereich im Innenhof der Ferienwohnung",
-    width: 800,
-    height: 600,
+    src: "/images/courtyard/03-innenhof-sitzbereich.jpg",
+    alt: "Gemütlicher Sitzbereich im Innenhof mit Holztisch, Gartenstühlen, Weinfass und mediterranen Pflanzen",
+    width: 1920,
+    height: 1440,
     category: "Außenbereich"
   },
   {
-    src: "/images/31-innenhof-detail-4.jpg",
-    alt: "Stilvoller Außenbereich mit historischem Charme",
-    width: 800,
-    height: 600,
+    src: "/images/courtyard/04-innenhof-panorama.jpg",
+    alt: "Weitläufiger Innenhof-Panorama mit Sitzecke, Bepflanzung, historischem Sandsteingewölbe und Fachwerk-Gebäude",
+    width: 1920,
+    height: 1440,
     category: "Außenbereich"
   },
-  
-  // Umgebung
   {
-    src: "/images/32-hambacher-schloss.jpg",
-    alt: "Blick auf das Hambacher Schloss von der Ferienwohnung - Wiege der deutschen Demokratie",
-    width: 800,
-    height: 600,
-    category: "Umgebung"
+    src: "/images/courtyard/05-treppe-innenhof.jpg",
+    alt: "Rustikale Holztreppe mit dunklem Holzgeländer führt durch begrünten Innenhof zur Ferienwohnung",
+    width: 1920,
+    height: 1440,
+    category: "Außenbereich"
+  },
+
+  // Wohnzimmer
+  {
+    src: "/images/living-room/01-wohnzimmer-hauptansicht.jpg",
+    alt: "Elegantes Wohnzimmer mit olivgrünem Sofa, Designer-Kugelleuchte, Parkettboden und großen Fenstern mit grauen Vorhängen",
+    width: 1920,
+    height: 1440,
+    category: "Wohnzimmer"
   },
   {
-    src: "/images/33-weinberge.jpg",
-    alt: "Weinberge der Pfalz in der Umgebung der Ferienwohnung Hambach",
-    width: 800,
-    height: 600,
-    category: "Umgebung"
+    src: "/images/living-room/02-wohnzimmer-alternativ.jpg",
+    alt: "Wohnzimmer mit olivgrünem Sofa, antikem gelbem Schrank mit floralen Motiven, dunkler Akzentwand und Holzboden",
+    width: 1920,
+    height: 1440,
+    category: "Wohnzimmer"
   },
   {
-    src: "/images/34-pfaelzer-wald.jpg",
-    alt: "Pfälzer Wald - direkt vor der Tür der Ferienwohnung",
-    width: 800,
-    height: 600,
-    category: "Umgebung"
+    src: "/images/living-room/03-kaminofen.jpg",
+    alt: "Moderner rot-schwarzer Kaminofen mit brennendem Feuer auf dunklem Fliesenboden neben grauem Sofa",
+    width: 1920,
+    height: 1440,
+    category: "Wohnzimmer"
+  },
+
+  // Küche
+  {
+    src: "/images/kitchen/01-kueche-essbereich.jpg",
+    alt: "Offene moderne Küche mit weißen Schränken, Holzarbeitsplatte, rotem Smeg-Kühlschrank und großem Esstisch mit gepolsterten Stühlen",
+    width: 1920,
+    height: 1440,
+    category: "Küche"
   },
   {
-    src: "/images/35-deutsche-weinstrasse.jpg",
-    alt: "Deutsche Weinstraße - Start für Weinwanderungen von der Ferienwohnung",
-    width: 800,
-    height: 600,
-    category: "Umgebung"
+    src: "/images/kitchen/02-kueche-panorama.jpg",
+    alt: "Großzügige Küche mit weißen Hängeschränken, gelben Fliesen, modernen Geräten und Essplatz mit Designer-Pendelleuchten",
+    width: 1920,
+    height: 1440,
+    category: "Küche"
+  },
+
+  // Schlafzimmer
+  {
+    src: "/images/bedroom/01-schlafzimmer-doppelbett.jpg",
+    alt: "Geräumiges Schlafzimmer mit Doppelbett, grauen Kissen, Holzschrank, sichtbaren Deckenbalken und zwei Fenstern mit grauen Vorhängen",
+    width: 1920,
+    height: 1440,
+    category: "Schlafzimmer"
+  },
+  {
+    src: "/images/bedroom/02-schlafzimmer-durchgang.jpg",
+    alt: "Schlafzimmer mit Doppelbett, Kiefernschrank, Holzbalken an der Decke und Durchgang zum angrenzenden Raum",
+    width: 1920,
+    height: 1440,
+    category: "Schlafzimmer"
+  },
+  {
+    src: "/images/bedroom/03-schlafzimmer-weiss.jpg",
+    alt: "Schlafzimmer mit weißem Holzbett, sichtbaren Deckenbalken, Holzboden und zwei Fenstern mit grauen Vorhängen",
+    width: 1920,
+    height: 1440,
+    category: "Schlafzimmer"
+  },
+  {
+    src: "/images/bedroom/04-schlafzimmer-detail.jpg",
+    alt: "Schlafzimmerdetail mit antikem Holzschrank, Stehlampe, Fenster mit grauen Vorhängen und Parkettboden",
+    width: 1920,
+    height: 1440,
+    category: "Schlafzimmer"
+  },
+  {
+    src: "/images/bedroom/05-schlafzimmer-antikschrank.jpg",
+    alt: "Gemütliches Schlafzimmer mit massivem antikem Holzschrank, brauner Akzentwand, Pendelleuchte und grauen Vorhängen",
+    width: 1920,
+    height: 1440,
+    category: "Schlafzimmer"
+  },
+
+  // Badezimmer
+  {
+    src: "/images/bathroom/03-dusche-detail.jpg",
+    alt: "Geräumige begehbare Dusche mit beigen Fliesen, Regendusche und Oberlicht für natürliches Licht",
+    width: 1920,
+    height: 1440,
+    category: "Badezimmer"
+  },
+  {
+    src: "/images/bathroom/04-badezimmer-komplett.jpg",
+    alt: "Vollständige Badezimmeransicht mit Waschbecken, Wandtoilette, Handtuchheizkörper, terracotta Bodenfliesen und großem Fenster",
+    width: 1920,
+    height: 1440,
+    category: "Badezimmer"
+  },
+  {
+    src: "/images/bathroom/05-gaeste-wc.jpg",
+    alt: "Kompaktes Gäste-WC mit weißem Waschbecken, Toilette, Holzboden und Fenster mit dezentem Sichtschutz",
+    width: 1920,
+    height: 1440,
+    category: "Badezimmer"
+  },
+
+  // Flur/Eingangsbereich
+  {
+    src: "/images/hallway/02-flur-fachwerk.jpg",
+    alt: "Langer Flur mit Holzboden, sichtbaren Fachwerkbalken an weißer Wand und antikem Holzmöbel",
+    width: 1920,
+    height: 1440,
+    category: "Eingangsbereich"
+  },
+  {
+    src: "/images/hallway/03-flur-eingang.jpg",
+    alt: "Moderner heller Flur mit Holzboden, weißen Wänden, Holztüren und dekorativer Lampe auf Sideboard",
+    width: 1920,
+    height: 1440,
+    category: "Eingangsbereich"
   }
 ];
 
