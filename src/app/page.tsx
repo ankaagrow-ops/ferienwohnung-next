@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/hero-section";
 import { ValueProposition } from "@/components/value-proposition";
 import { GallerySection } from "@/components/gallery-section";
 import { FeaturesSection } from "@/components/features-section";
+import { SurroundingsSection } from "@/components/surroundings-section";
 import { LocationActivities } from "@/components/location-activities";
 import { RestaurantsSection } from "@/components/restaurants-section";
 import { PricingSection } from "@/components/pricing-section";
@@ -67,6 +68,69 @@ const galleryImages = [
     width: 800,
     height: 600,
     category: "Außenansicht"
+  },
+  {
+    src: "/images/08-wohnzimmer-detail.jpg",
+    alt: "Gemütliche Sitzecke mit Blick auf den Garten",
+    width: 600,
+    height: 400,
+    category: "Wohnzimmer"
+  },
+  {
+    src: "/images/09-kueche-detail.jpg",
+    alt: "Moderne Küchengeräte und Arbeitsplatte",
+    width: 600,
+    height: 400,
+    category: "Küche"
+  },
+  {
+    src: "/images/10-badezimmer-detail.jpg",
+    alt: "Luxuriöse Badewanne mit Blick ins Grüne",
+    width: 600,
+    height: 400,
+    category: "Badezimmer"
+  },
+  {
+    src: "/images/11-schlafzimmer-detail.jpg",
+    alt: "Gemütliches Schlafzimmer mit historischen Elementen",
+    width: 600,
+    height: 400,
+    category: "Schlafzimmer"
+  },
+  {
+    src: "/images/12-innenhof-detail.jpg",
+    alt: "Ruhiger Innenhof mit Sitzgelegenheiten",
+    width: 800,
+    height: 600,
+    category: "Außenbereich"
+  },
+  {
+    src: "/images/13-hambacher-schloss.jpg",
+    alt: "Blick auf das Hambacher Schloss von der Ferienwohnung",
+    width: 800,
+    height: 600,
+    category: "Umgebung"
+  },
+  {
+    src: "/images/14-weinberge.jpg",
+    alt: "Weinberge der Pfalz in der Umgebung",
+    width: 800,
+    height: 600,
+    category: "Umgebung"
+  },
+  {
+    src: "/images/15-pfaelzer-wald.jpg",
+    alt: "Pfälzer Wald - direkt vor der Tür",
+    width: 800,
+    height: 600,
+    category: "Umgebung"
+  },
+  {
+    src: "/images/16-deutsche-weinstrasse.jpg",
+    alt: "Deutsche Weinstraße - Start für Weinwanderungen",
+    width: 800,
+    height: 600,
+    category: "Umgebung"
   }
 ];
 
@@ -81,6 +145,7 @@ export default function HomePage() {
         <ValueProposition />
         <GallerySection images={galleryImages} />
         <FeaturesSection />
+        <SurroundingsSection />
         <LocationActivities />
         <RestaurantsSection />
         <PricingSection />

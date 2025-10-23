@@ -123,21 +123,27 @@ export function HeroSection({ hero }: HeroSectionProps) {
               transition={{ duration: 0.8, delay: 1 }}
             >
               {[
-                { icon: MapPin, text: "Fußweg zum Hambacher Schloss" },
-                { icon: Wine, text: "Mitten in der Weinstraße" },
-                { icon: Sparkles, text: "Premium Ausstattung" }
+                { icon: MapPin, text: "Fußweg zum Hambacher Schloss", highlight: "Geschichte" },
+                { icon: Wine, text: "Mitten in der Weinstraße", highlight: "Wein" },
+                { icon: Sparkles, text: "Premium Ausstattung", highlight: "Luxus" }
               ].map((feature, index) => (
                 <motion.div
                   key={index}
-                  className="flex items-center gap-3 text-white/90"
+                  className="group flex items-center gap-3 text-white/90 p-4 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
+                  whileHover={{ scale: 1.05 }}
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
-                    <feature.icon className="h-5 w-5" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm group-hover:bg-white/30 transition-colors">
+                    <feature.icon className="h-6 w-6" />
                   </div>
-                  <span className="text-sm font-medium">{feature.text}</span>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-sm font-medium">{feature.text}</span>
+                      <span className="text-xs bg-white/20 px-2 py-1 rounded-full">{feature.highlight}</span>
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </motion.div>

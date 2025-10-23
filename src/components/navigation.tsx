@@ -19,6 +19,7 @@ export function Navigation() {
     { href: "#vorteile", label: "Vorteile" },
     { href: "#gallery", label: "Galerie" },
     { href: "#ausstattung", label: "Ausstattung" },
+    { href: "#umgebung", label: "Umgebung" },
     { href: "#location", label: "Lage" },
     { href: "#restaurants", label: "Restaurants" },
     { href: "#preise", label: "Preise" },
