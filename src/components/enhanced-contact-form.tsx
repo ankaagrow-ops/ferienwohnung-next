@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, Calendar, Users, MessageSquare, CheckCircle, AlertCircle, Loader2, Shield } from "lucide-react";
+import { Mail, Phone, Calendar, CheckCircle, AlertCircle, Loader2, Shield } from "lucide-react";
 
 interface FormData {
   name: string;
