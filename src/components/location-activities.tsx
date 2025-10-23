@@ -110,7 +110,7 @@ export function LocationActivities() {
           >
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.123456789!2d8.123456789!3d49.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDA3JzI0LjQiTiA4wrAwNycyNC40IkU!5e0!3m2!1sde!2sde!4v1234567890123!5m2!1sde!2sde"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.123456789!2d8.123456789!3d49.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDA3JzI0LjQiTiA4wrAwNycyNC40IkU!5e0!3m2!1sde!2sde!4v1234567890123!5m2!1sde!2sde&q=Schlossstraße+18,+67434+Neustadt+an+der+Weinstraße"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
@@ -125,7 +125,7 @@ export function LocationActivities() {
             <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg">
               <div className="flex items-center gap-2 mb-2">
                 <MapPin className="h-5 w-5 text-primary-600" />
-                <span className="font-semibold text-gray-900">Schloßstraße, Hambach</span>
+                <span className="font-semibold text-gray-900">Schloßstraße 18, Neustadt</span>
               </div>
               <p className="text-sm text-gray-600">Fußweg zum Hambacher Schloss</p>
             </div>

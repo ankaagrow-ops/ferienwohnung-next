@@ -400,8 +400,8 @@ export function ContactForm() {
           
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-200/50">
             <Calendar className="h-8 w-8 text-primary-600 mx-auto mb-3" />
-            <h4 className="font-semibold text-gray-900 mb-2">Verfügbarkeit</h4>
-            <p className="text-gray-600 text-sm">Ganzjährig</p>
+            <h4 className="font-semibold text-gray-900 mb-2">Adresse</h4>
+            <p className="text-gray-600 text-sm">Schloßstraße 18<br />67434 Neustadt</p>
           </div>
         </motion.div>
       </div>

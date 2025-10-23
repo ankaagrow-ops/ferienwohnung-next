@@ -8,6 +8,7 @@ import { PricingSection } from "@/components/pricing-section";
 import { ContactForm } from "@/components/contact-form";
 import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
+import { SchemaOrg } from "@/components/schema-org";
 
 // Premium Content Data
 const heroContent = {
@@ -72,6 +73,7 @@ const galleryImages = [
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
+      <SchemaOrg />
       <Navigation />
       
       <main>
