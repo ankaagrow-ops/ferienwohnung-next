@@ -7,7 +7,7 @@ import { Mountain, Castle, Wine, Trees } from "lucide-react";
 export function SurroundingsSection() {
   const surroundings = [
     {
-      image: "/images/13-hambacher-schloss.jpg",
+      image: "/images/32-hambacher-schloss.jpg",
       title: "Hambacher Schloss",
       description: "Fußweg zum historischen Schloss - Wiege der deutschen Demokratie",
       icon: Castle,
@@ -15,7 +15,7 @@ export function SurroundingsSection() {
       highlight: "Geschichte"
     },
     {
-      image: "/images/14-weinberge.jpg", 
+      image: "/images/33-weinberge.jpg", 
       title: "Weinberge der Pfalz",
       description: "Entdeckt die wunderschönen Weinberge direkt vor der Tür",
       icon: Wine,
@@ -23,7 +23,7 @@ export function SurroundingsSection() {
       highlight: "Wein"
     },
     {
-      image: "/images/15-pfaelzer-wald.jpg",
+      image: "/images/34-pfaelzer-wald.jpg",
       title: "Pfälzer Wald",
       description: "Wandern und Natur erleben im größten zusammenhängenden Waldgebiet",
       icon: Trees,
@@ -31,7 +31,7 @@ export function SurroundingsSection() {
       highlight: "Natur"
     },
     {
-      image: "/images/16-deutsche-weinstrasse.jpg",
+      image: "/images/35-deutsche-weinstrasse.jpg",
       title: "Deutsche Weinstraße",
       description: "Start für unvergessliche Weinwanderungen und Touren",
       icon: Mountain,
