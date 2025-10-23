@@ -145,9 +145,9 @@ export function OurStorySection() {
             </div>
             
             <blockquote className="text-xl text-gray-700 leading-relaxed italic font-serif">
-              "Wir lieben dieses Haus und seine Geschichte. Es ist unser Zuhause, und wir möchten, 
+              &ldquo;Wir lieben dieses Haus und seine Geschichte. Es ist unser Zuhause, und wir möchten, 
               dass Sie sich hier genauso wohlfühlen wie wir. Jeder Gast ist für uns wie ein Freund, 
-              der zu Besuch kommt."
+              der zu Besuch kommt.&rdquo;
             </blockquote>
             
             <div className="mt-6 text-sm text-gray-500">
