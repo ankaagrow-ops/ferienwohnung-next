@@ -43,103 +43,70 @@ export function HeroSection({ hero }: HeroSectionProps) {
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex min-h-screen items-center">
           <div className="max-w-4xl">
-            {/* Premium Badge */}
-            <motion.div 
-              className="mb-8"
+
+            {/* Typography */}
+            <motion.h1
+              className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur-sm px-4 py-2 text-sm font-medium text-primary-700 shadow-lg">
-                <Sparkles className="h-4 w-4" />
-                Premium Ferienwohnung
-              </div>
-            </motion.div>
-
-            {/* Premium Typography */}
-            <motion.h1 
-              className="text-5xl font-bold text-white sm:text-6xl lg:text-7xl leading-tight mb-6"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              Historisches Wohnen in der{" "}
-              <motion.span 
-                className="block bg-gradient-to-r from-accent-400 to-accent-500 bg-clip-text text-transparent"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-              >
-                Wiege der Demokratie
-              </motion.span>
+              Urlaub in Hambach
+              <span className="block mt-2">an der Weinstraße</span>
             </motion.h1>
-            
-            <motion.p 
-              className="text-xl text-gray-100 sm:text-2xl mb-8 max-w-2xl leading-relaxed"
-              initial={{ opacity: 0, y: 30 }}
+
+            <motion.p
+              className="text-lg text-gray-100 sm:text-xl mb-8 max-w-xl leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Charmante Ferienwohnung in Hambach – Wo Geschichte auf Gemütlichkeit trifft
+              Gemütliche Ferienwohnung im historischen Fachwerkhaus – direkt am Fuße des Hambacher Schlosses
             </motion.p>
 
-            {/* Premium CTA Buttons */}
-            <motion.div 
+            {/* CTA Buttons */}
+            <motion.div
               className="flex flex-col sm:flex-row gap-4 mb-12"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-            >
-              <motion.button
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="group relative overflow-hidden rounded-2xl bg-primary-600 px-8 py-4 text-lg font-semibold text-white shadow-xl transition-all duration-300 hover:bg-primary-700 hover:shadow-2xl hover:shadow-primary-600/25"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span className="relative z-10">Jetzt anfragen</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-              </motion.button>
-              
-              <motion.button
-                onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
-                className="group rounded-2xl border-2 border-white/30 bg-white/10 backdrop-blur-sm px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:bg-white/20 hover:border-white/50"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Entdecken
-              </motion.button>
-            </motion.div>
-
-            {/* Premium Feature List */}
-            <motion.div 
-              className="grid grid-cols-1 sm:grid-cols-3 gap-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <button
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="rounded-xl bg-primary-600 px-8 py-3 text-base font-medium text-white shadow-lg transition-colors hover:bg-primary-700"
+              >
+                Anfragen
+              </button>
+
+              <button
+                onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
+                className="rounded-xl border-2 border-white/40 bg-white/10 backdrop-blur-sm px-8 py-3 text-base font-medium text-white transition-all hover:bg-white/20"
+              >
+                Bilder ansehen
+              </button>
+            </motion.div>
+
+            {/* Feature List */}
+            <motion.div
+              className="grid grid-cols-1 sm:grid-cols-3 gap-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
             >
               {[
-                { icon: MapPin, text: "Fußweg zum Hambacher Schloss", highlight: "Geschichte" },
-                { icon: Wine, text: "Mitten in der Weinstraße", highlight: "Wein" },
-                { icon: Sparkles, text: "Premium Ausstattung", highlight: "Luxus" }
+                { icon: MapPin, text: "Fußweg zum Hambacher Schloss" },
+                { icon: Wine, text: "Mitten in der Weinstraße" },
+                { icon: Sparkles, text: "Gemütliche Ausstattung" }
               ].map((feature, index) => (
-                <motion.div
+                <div
                   key={index}
-                  className="group flex items-center gap-3 text-white/90 p-4 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
-                  whileHover={{ scale: 1.05 }}
+                  className="flex items-center gap-3 text-white/90 p-4 rounded-lg bg-white/10 backdrop-blur-sm"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm group-hover:bg-white/30 transition-colors">
-                    <feature.icon className="h-6 w-6" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
+                    <feature.icon className="h-5 w-5" />
                   </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="text-sm font-medium">{feature.text}</span>
-                      <span className="text-xs bg-white/20 px-2 py-1 rounded-full">{feature.highlight}</span>
-                    </div>
-                  </div>
-                </motion.div>
+                  <span className="text-sm font-medium">{feature.text}</span>
+                </div>
               ))}
             </motion.div>
           </div>
