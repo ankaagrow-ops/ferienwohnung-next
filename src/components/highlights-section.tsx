@@ -176,7 +176,7 @@ export function HighlightsSection({ highlights }: HighlightsSectionProps) {
 
               {/* Premium Hover Effect */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-wine-500 to-wine-700 transform scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></div>
-            </article>
+            </motion.article>
           ))}
         </motion.div>
 

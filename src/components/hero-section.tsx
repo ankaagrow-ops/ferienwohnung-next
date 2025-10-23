@@ -11,7 +11,6 @@ type HeroSectionProps = {
 export function HeroSection({ hero }: HeroSectionProps) {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 1000], [0, -300]);
-  const opacity = useTransform(scrollY, [0, 500], [1, 0]);
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 via-vineyard-50/30 to-gold-50/20">
