@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
