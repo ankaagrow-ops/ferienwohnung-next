@@ -10,8 +10,6 @@ export function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [currentLocale, setCurrentLocale] = useState('de');
   const t = useTranslations('navigation');
-  const router = useRouter();
-  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,14 +18,6 @@ export function Navigation() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  useEffect(() => {
-    // Extract locale from pathname
-    const locale = pathname.split('/')[1];
-    if (locale === 'en' || locale === 'de') {
-      setCurrentLocale(locale);
-    }
-  }, [pathname]);
 
   const navItems = [
     { href: "#vorteile", label: t('vorteile') },
@@ -41,8 +31,9 @@ export function Navigation() {
   ];
 
   const switchLanguage = (locale: string) => {
-    const newPath = pathname.replace(/^\/[a-z]{2}/, `/${locale}`);
-    router.push(newPath);
+    setCurrentLocale(locale);
+    // For now, just change the language state
+    // TODO: Implement proper language switching
   };
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
