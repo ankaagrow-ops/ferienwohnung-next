@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import type { Highlight } from "@/lib/landing-content";
 
 type HighlightsSectionProps = {
@@ -17,57 +20,149 @@ export function HighlightsSection({ highlights }: HighlightsSectionProps) {
       
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Premium Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 rounded-full bg-wine-100 px-4 py-2 text-sm font-medium text-wine-700 mb-6">
-            <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div 
+            className="inline-flex items-center gap-2 rounded-full bg-wine-100 px-4 py-2 text-sm font-medium text-wine-700 mb-6"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <motion.svg 
+              className="h-4 w-4" 
+              fill="currentColor" 
+              viewBox="0 0 20 20"
+              animate={{ rotate: [0, 10, -10, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
               <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
-            </svg>
+            </motion.svg>
             Premium Features
-          </div>
-          <h2 id="section-highlights" className="text-4xl font-bold text-slate-900 sm:text-5xl lg:text-6xl">
+          </motion.div>
+          <motion.h2 
+            id="section-highlights" 
+            className="text-4xl font-bold text-slate-900 sm:text-5xl lg:text-6xl"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             Darauf kannst du dich
-            <span className="block bg-gradient-to-r from-wine-700 to-wine-500 bg-clip-text text-transparent">
+            <motion.span 
+              className="block bg-gradient-to-r from-wine-700 to-wine-500 bg-clip-text text-transparent"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
               freuen
-            </span>
-          </h2>
-          <p className="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
+            </motion.span>
+          </motion.h2>
+          <motion.p 
+            className="mt-6 text-xl text-slate-600 max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
             Jeder Aspekt unserer Ferienwohnung wurde mit Liebe zum Detail gestaltet, 
             um euch einen unvergesslichen Aufenthalt zu ermöglichen.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         {/* Premium Cards Grid */}
-        <div className="grid gap-8 lg:grid-cols-3">
+        <motion.div 
+          className="grid gap-8 lg:grid-cols-3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.2
+              }
+            }
+          }}
+        >
           {highlights.map((highlight, index) => (
-            <article
+            <motion.article
               key={highlight.title}
               className="group relative overflow-hidden rounded-3xl bg-white p-8 shadow-lg shadow-slate-900/5 border border-slate-200/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-wine-900/10"
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { duration: 0.6, ease: "easeOut" }
+                }
+              }}
+              whileHover={{ 
+                y: -8,
+                transition: { type: "spring", stiffness: 300 }
+              }}
             >
               {/* Premium Card Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-wine-50/50 via-transparent to-gold-50/30 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
               
               {/* Premium Icon */}
-              <div className="relative mb-6">
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-wine-100 to-wine-200 shadow-lg">
+              <motion.div 
+                className="relative mb-6"
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <motion.div 
+                  className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-wine-100 to-wine-200 shadow-lg"
+                  whileHover={{ rotate: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
                   {index === 0 && (
-                    <svg className="h-8 w-8 text-wine-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <motion.svg 
+                      className="h-8 w-8 text-wine-600" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      animate={{ scale: [1, 1.1, 1] }}
+                      transition={{ duration: 2, repeat: Infinity }}
+                    >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
+                    </motion.svg>
                   )}
                   {index === 1 && (
-                    <svg className="h-8 w-8 text-wine-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <motion.svg 
+                      className="h-8 w-8 text-wine-600" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      animate={{ scale: [1, 1.1, 1] }}
+                      transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
+                    >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5a2 2 0 012-2h4a2 2 0 012 2v2H8V5z" />
-                    </svg>
+                    </motion.svg>
                   )}
                   {index === 2 && (
-                    <svg className="h-8 w-8 text-wine-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <motion.svg 
+                      className="h-8 w-8 text-wine-600" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      animate={{ scale: [1, 1.1, 1] }}
+                      transition={{ duration: 2, repeat: Infinity, delay: 1 }}
+                    >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
+                    </motion.svg>
                   )}
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
 
               {/* Premium Content */}
               <div className="relative">
